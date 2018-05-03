@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E68D9467739BF10999E7B9F /* Pods_Reference_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD303EB4570A44076A3A80F /* Pods_Reference_App.framework */; };
+		CD079A552097B6B700AA5F51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079A542097B6B700AA5F51 /* AppDelegate.swift */; };
+		CD079A5A2097B6B700AA5F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD079A582097B6B700AA5F51 /* Main.storyboard */; };
+		CD079A5C2097B6B900AA5F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD079A5B2097B6B900AA5F51 /* Assets.xcassets */; };
+		CD079A5F2097B6B900AA5F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD079A5D2097B6B900AA5F51 /* LaunchScreen.storyboard */; };
+		CD079A892097B75300AA5F51 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079A882097B75300AA5F51 /* MainMenuViewController.swift */; };
+		CD079A8E2097B87300AA5F51 /* GetNavWithPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079A8D2097B87300AA5F51 /* GetNavWithPreviewViewController.swift */; };
+		CD079A912097B88B00AA5F51 /* GetNavWithoutPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079A902097B88B00AA5F51 /* GetNavWithoutPreviewViewController.swift */; };
+		CD1AE5082098D03D001C1F1C /* FindLatLongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE5072098D03D001C1F1C /* FindLatLongViewController.swift */; };
+		CD1AE50B2098D3D3001C1F1C /* InputOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE50A2098D3D3001C1F1C /* InputOutputViewController.swift */; };
+		CD1AE50D2098DAC7001C1F1C /* SearchForLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE50C2098DAC7001C1F1C /* SearchForLocationViewController.swift */; };
+		CD1AE50F2098DFBA001C1F1C /* DisplaySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE50E2098DFBA001C1F1C /* DisplaySearchViewController.swift */; };
+		CD1AE5112098E093001C1F1C /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE5102098E093001C1F1C /* OutputViewController.swift */; };
+		CDB37B0820992166006AE41E /* DisplayOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */; };
+		CDB37B0A2099224D006AE41E /* DisplayTurnListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */; };
+		CDB37B0D20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B0C20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift */; };
+		CDB37B0F209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B0E209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift */; };
+		CDB37B11209925B9006AE41E /* AnnotateMapWithStaticPinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B10209925B9006AE41E /* AnnotateMapWithStaticPinsViewController.swift */; };
+		CDB37B13209926B3006AE41E /* CreateMapVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B12209926B3006AE41E /* CreateMapVCViewController.swift */; };
+		CDB37B19209A2018006AE41E /* ReportDriverCurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B18209A2018006AE41E /* ReportDriverCurrentLocationViewController.swift */; };
+		CDB37B1B209A2698006AE41E /* ReportDriverETAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B1A209A2698006AE41E /* ReportDriverETAViewController.swift */; };
+		CDB37B1D209A2896006AE41E /* ReportDriverRouteSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B1C209A2896006AE41E /* ReportDriverRouteSegmentViewController.swift */; };
+		CDB37B1F209A2EE9006AE41E /* DisplayDriverReportedLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B1E209A2EE9006AE41E /* DisplayDriverReportedLocationViewController.swift */; };
+		CDDBEEA7209917BD003F0A4E /* GetRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBEEA6209917BD003F0A4E /* GetRouteViewController.swift */; };
+		CDDBEEA9209918E1003F0A4E /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBEEA8209918E1003F0A4E /* ExampleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A72989A0FFE44672EC26BC2 /* Pods-Reference App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.release.xcconfig"; sourceTree = "<group>"; };
+		4FD303EB4570A44076A3A80F /* Pods_Reference_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reference_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553D17430E6FEDF7803B3166 /* Pods-Reference App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.debug.xcconfig"; sourceTree = "<group>"; };
+		CD079A512097B6B700AA5F51 /* Reference App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reference App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD079A542097B6B700AA5F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD079A592097B6B700AA5F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD079A5B2097B6B900AA5F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD079A5E2097B6B900AA5F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD079A602097B6B900AA5F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD079A882097B75300AA5F51 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		CD079A8D2097B87300AA5F51 /* GetNavWithPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNavWithPreviewViewController.swift; sourceTree = "<group>"; };
+		CD079A902097B88B00AA5F51 /* GetNavWithoutPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNavWithoutPreviewViewController.swift; sourceTree = "<group>"; };
+		CD1AE5072098D03D001C1F1C /* FindLatLongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLatLongViewController.swift; sourceTree = "<group>"; };
+		CD1AE50A2098D3D3001C1F1C /* InputOutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOutputViewController.swift; sourceTree = "<group>"; };
+		CD1AE50C2098DAC7001C1F1C /* SearchForLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForLocationViewController.swift; sourceTree = "<group>"; };
+		CD1AE50E2098DFBA001C1F1C /* DisplaySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchViewController.swift; sourceTree = "<group>"; };
+		CD1AE5102098E093001C1F1C /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayOverviewViewController.swift; sourceTree = "<group>"; };
+		CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTurnListViewController.swift; sourceTree = "<group>"; };
+		CDB37B0C20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertMapViewWithStoryboardViewController.swift; sourceTree = "<group>"; };
+		CDB37B0E209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertMapViewWithoutStoryboardViewController.swift; sourceTree = "<group>"; };
+		CDB37B10209925B9006AE41E /* AnnotateMapWithStaticPinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotateMapWithStaticPinsViewController.swift; sourceTree = "<group>"; };
+		CDB37B12209926B3006AE41E /* CreateMapVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMapVCViewController.swift; sourceTree = "<group>"; };
+		CDB37B18209A2018006AE41E /* ReportDriverCurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDriverCurrentLocationViewController.swift; sourceTree = "<group>"; };
+		CDB37B1A209A2698006AE41E /* ReportDriverETAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDriverETAViewController.swift; sourceTree = "<group>"; };
+		CDB37B1C209A2896006AE41E /* ReportDriverRouteSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDriverRouteSegmentViewController.swift; sourceTree = "<group>"; };
+		CDB37B1E209A2EE9006AE41E /* DisplayDriverReportedLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDriverReportedLocationViewController.swift; sourceTree = "<group>"; };
+		CDDBEEA6209917BD003F0A4E /* GetRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRouteViewController.swift; sourceTree = "<group>"; };
+		CDDBEEA8209918E1003F0A4E /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD079A4E2097B6B700AA5F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E68D9467739BF10999E7B9F /* Pods_Reference_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFCE30BD44FE8C96AE65D245 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FD303EB4570A44076A3A80F /* Pods_Reference_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4FD230B87420358C4DE89A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				553D17430E6FEDF7803B3166 /* Pods-Reference App.debug.xcconfig */,
+				4A72989A0FFE44672EC26BC2 /* Pods-Reference App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD079A482097B6B700AA5F51 = {
+			isa = PBXGroup;
+			children = (
+				CD079A532097B6B700AA5F51 /* Reference App */,
+				CD079A522097B6B700AA5F51 /* Products */,
+				C4FD230B87420358C4DE89A2 /* Pods */,
+				BFCE30BD44FE8C96AE65D245 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD079A522097B6B700AA5F51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD079A512097B6B700AA5F51 /* Reference App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD079A532097B6B700AA5F51 /* Reference App */ = {
+			isa = PBXGroup;
+			children = (
+				CD079A542097B6B700AA5F51 /* AppDelegate.swift */,
+				CD1AE5092098D3B7001C1F1C /* Support */,
+				CD079A8C2097B85600AA5F51 /* 1. Get Navigation (with Preview) */,
+				CD079A8F2097B87900AA5F51 /* 2. Get Navigation (without Preview) */,
+				CD1AE5042098CF99001C1F1C /* 3. Find Lat Long from Street Address */,
+				CD1AE5052098CFD5001C1F1C /* 4. Search for a Location */,
+				CD1AE5062098D004001C1F1C /* 5. Display Search */,
+				CDDBEE9F209916F9003F0A4E /* 6. Get Route */,
+				CDDBEEA020991753003F0A4E /* 7. Display Overview */,
+				CDDBEEA220991760003F0A4E /* 8. Display Turn List */,
+				CDDBEEA42099177A003F0A4E /* 9. Insert Map View (with Storyboard) */,
+				CDB37B0B20992358006AE41E /* 10. Insert Map View (without Storyboard) */,
+				CDDBEEA320991768003F0A4E /* 11. Annotate Map with Static Pins */,
+				CDDBEEA520991789003F0A4E /* 12. Create Map View Controller */,
+				CDB37B14209A1C03006AE41E /* 13. Report Driver Current Location */,
+				CDB37B15209A1C0E006AE41E /* 14. Report Driver ETA */,
+				CDB37B16209A1C17006AE41E /* 15. Report Driver Route Segment */,
+				CDB37B17209A1C38006AE41E /* 16. Display Driver Reported Location */,
+				CD079A582097B6B700AA5F51 /* Main.storyboard */,
+				CD079A5B2097B6B900AA5F51 /* Assets.xcassets */,
+				CD079A5D2097B6B900AA5F51 /* LaunchScreen.storyboard */,
+				CD079A602097B6B900AA5F51 /* Info.plist */,
+			);
+			path = "Reference App";
+			sourceTree = "<group>";
+		};
+		CD079A8C2097B85600AA5F51 /* 1. Get Navigation (with Preview) */ = {
+			isa = PBXGroup;
+			children = (
+				CD079A8D2097B87300AA5F51 /* GetNavWithPreviewViewController.swift */,
+			);
+			path = "1. Get Navigation (with Preview)";
+			sourceTree = "<group>";
+		};
+		CD079A8F2097B87900AA5F51 /* 2. Get Navigation (without Preview) */ = {
+			isa = PBXGroup;
+			children = (
+				CD079A902097B88B00AA5F51 /* GetNavWithoutPreviewViewController.swift */,
+			);
+			path = "2. Get Navigation (without Preview)";
+			sourceTree = "<group>";
+		};
+		CD1AE5042098CF99001C1F1C /* 3. Find Lat Long from Street Address */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AE5072098D03D001C1F1C /* FindLatLongViewController.swift */,
+			);
+			path = "3. Find Lat Long from Street Address";
+			sourceTree = "<group>";
+		};
+		CD1AE5052098CFD5001C1F1C /* 4. Search for a Location */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AE50C2098DAC7001C1F1C /* SearchForLocationViewController.swift */,
+			);
+			path = "4. Search for a Location";
+			sourceTree = "<group>";
+		};
+		CD1AE5062098D004001C1F1C /* 5. Display Search */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AE50E2098DFBA001C1F1C /* DisplaySearchViewController.swift */,
+			);
+			path = "5. Display Search";
+			sourceTree = "<group>";
+		};
+		CD1AE5092098D3B7001C1F1C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CD079A882097B75300AA5F51 /* MainMenuViewController.swift */,
+				CDDBEEA8209918E1003F0A4E /* ExampleViewController.swift */,
+				CD1AE5102098E093001C1F1C /* OutputViewController.swift */,
+				CD1AE50A2098D3D3001C1F1C /* InputOutputViewController.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CDB37B0B20992358006AE41E /* 10. Insert Map View (without Storyboard) */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B0E209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift */,
+			);
+			path = "10. Insert Map View (without Storyboard)";
+			sourceTree = "<group>";
+		};
+		CDB37B14209A1C03006AE41E /* 13. Report Driver Current Location */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B18209A2018006AE41E /* ReportDriverCurrentLocationViewController.swift */,
+			);
+			path = "13. Report Driver Current Location";
+			sourceTree = "<group>";
+		};
+		CDB37B15209A1C0E006AE41E /* 14. Report Driver ETA */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B1A209A2698006AE41E /* ReportDriverETAViewController.swift */,
+			);
+			path = "14. Report Driver ETA";
+			sourceTree = "<group>";
+		};
+		CDB37B16209A1C17006AE41E /* 15. Report Driver Route Segment */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B1C209A2896006AE41E /* ReportDriverRouteSegmentViewController.swift */,
+			);
+			path = "15. Report Driver Route Segment";
+			sourceTree = "<group>";
+		};
+		CDB37B17209A1C38006AE41E /* 16. Display Driver Reported Location */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B1E209A2EE9006AE41E /* DisplayDriverReportedLocationViewController.swift */,
+			);
+			path = "16. Display Driver Reported Location";
+			sourceTree = "<group>";
+		};
+		CDDBEE9F209916F9003F0A4E /* 6. Get Route */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBEEA6209917BD003F0A4E /* GetRouteViewController.swift */,
+			);
+			path = "6. Get Route";
+			sourceTree = "<group>";
+		};
+		CDDBEEA020991753003F0A4E /* 7. Display Overview */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */,
+			);
+			path = "7. Display Overview";
+			sourceTree = "<group>";
+		};
+		CDDBEEA220991760003F0A4E /* 8. Display Turn List */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */,
+			);
+			path = "8. Display Turn List";
+			sourceTree = "<group>";
+		};
+		CDDBEEA320991768003F0A4E /* 11. Annotate Map with Static Pins */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B10209925B9006AE41E /* AnnotateMapWithStaticPinsViewController.swift */,
+			);
+			path = "11. Annotate Map with Static Pins";
+			sourceTree = "<group>";
+		};
+		CDDBEEA42099177A003F0A4E /* 9. Insert Map View (with Storyboard) */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B0C20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift */,
+			);
+			path = "9. Insert Map View (with Storyboard)";
+			sourceTree = "<group>";
+		};
+		CDDBEEA520991789003F0A4E /* 12. Create Map View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37B12209926B3006AE41E /* CreateMapVCViewController.swift */,
+			);
+			path = "12. Create Map View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD079A502097B6B700AA5F51 /* Reference App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD079A632097B6B900AA5F51 /* Build configuration list for PBXNativeTarget "Reference App" */;
+			buildPhases = (
+				8450DA9C6C304CDA900B6EC5 /* [CP] Check Pods Manifest.lock */,
+				CD079A4D2097B6B700AA5F51 /* Sources */,
+				CD079A4E2097B6B700AA5F51 /* Frameworks */,
+				CD079A4F2097B6B700AA5F51 /* Resources */,
+				F0BCD1975914A780595BBF42 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reference App";
+			productName = "Reference App";
+			productReference = CD079A512097B6B700AA5F51 /* Reference App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD079A492097B6B700AA5F51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = TallyGo;
+				TargetAttributes = {
+					CD079A502097B6B700AA5F51 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = CD079A4C2097B6B700AA5F51 /* Build configuration list for PBXProject "Reference App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD079A482097B6B700AA5F51;
+			productRefGroup = CD079A522097B6B700AA5F51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD079A502097B6B700AA5F51 /* Reference App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD079A4F2097B6B700AA5F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD079A5F2097B6B900AA5F51 /* LaunchScreen.storyboard in Resources */,
+				CD079A5C2097B6B900AA5F51 /* Assets.xcassets in Resources */,
+				CD079A5A2097B6B700AA5F51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8450DA9C6C304CDA900B6EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reference App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0BCD1975914A780595BBF42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/TallyGoKit/TallyGoKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TallyGoKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD079A4D2097B6B700AA5F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDBEEA9209918E1003F0A4E /* ExampleViewController.swift in Sources */,
+				CDB37B19209A2018006AE41E /* ReportDriverCurrentLocationViewController.swift in Sources */,
+				CD1AE50D2098DAC7001C1F1C /* SearchForLocationViewController.swift in Sources */,
+				CD079A8E2097B87300AA5F51 /* GetNavWithPreviewViewController.swift in Sources */,
+				CDB37B13209926B3006AE41E /* CreateMapVCViewController.swift in Sources */,
+				CD079A912097B88B00AA5F51 /* GetNavWithoutPreviewViewController.swift in Sources */,
+				CDB37B0D20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift in Sources */,
+				CDDBEEA7209917BD003F0A4E /* GetRouteViewController.swift in Sources */,
+				CD1AE50B2098D3D3001C1F1C /* InputOutputViewController.swift in Sources */,
+				CDB37B0820992166006AE41E /* DisplayOverviewViewController.swift in Sources */,
+				CD1AE5082098D03D001C1F1C /* FindLatLongViewController.swift in Sources */,
+				CDB37B0F209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift in Sources */,
+				CDB37B1D209A2896006AE41E /* ReportDriverRouteSegmentViewController.swift in Sources */,
+				CD1AE50F2098DFBA001C1F1C /* DisplaySearchViewController.swift in Sources */,
+				CDB37B0A2099224D006AE41E /* DisplayTurnListViewController.swift in Sources */,
+				CD1AE5112098E093001C1F1C /* OutputViewController.swift in Sources */,
+				CDB37B11209925B9006AE41E /* AnnotateMapWithStaticPinsViewController.swift in Sources */,
+				CD079A892097B75300AA5F51 /* MainMenuViewController.swift in Sources */,
+				CDB37B1B209A2698006AE41E /* ReportDriverETAViewController.swift in Sources */,
+				CD079A552097B6B700AA5F51 /* AppDelegate.swift in Sources */,
+				CDB37B1F209A2EE9006AE41E /* DisplayDriverReportedLocationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD079A582097B6B700AA5F51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD079A592097B6B700AA5F51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD079A5D2097B6B900AA5F51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD079A5E2097B6B900AA5F51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD079A612097B6B900AA5F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD079A622097B6B900AA5F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD079A642097B6B900AA5F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553D17430E6FEDF7803B3166 /* Pods-Reference App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Reference App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD079A652097B6B900AA5F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A72989A0FFE44672EC26BC2 /* Pods-Reference App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Reference App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD079A4C2097B6B700AA5F51 /* Build configuration list for PBXProject "Reference App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD079A612097B6B900AA5F51 /* Debug */,
+				CD079A622097B6B900AA5F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD079A632097B6B900AA5F51 /* Build configuration list for PBXNativeTarget "Reference App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD079A642097B6B900AA5F51 /* Debug */,
+				CD079A652097B6B900AA5F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD079A492097B6B700AA5F51 /* Project object */;
+}

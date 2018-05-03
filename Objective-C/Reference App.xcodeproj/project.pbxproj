@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E52949EB6AD699A27116B78 /* libPods-Reference App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9405A0124124E8136D7D5122 /* libPods-Reference App.a */; };
+		CD079A742097B6DB00AA5F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD079A732097B6DB00AA5F51 /* AppDelegate.m */; };
+		CD079A772097B6DB00AA5F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD079A762097B6DB00AA5F51 /* ViewController.m */; };
+		CD079A7C2097B6DC00AA5F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD079A7B2097B6DC00AA5F51 /* Assets.xcassets */; };
+		CD079A7F2097B6DC00AA5F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD079A7D2097B6DC00AA5F51 /* LaunchScreen.storyboard */; };
+		CD079A822097B6DC00AA5F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD079A812097B6DC00AA5F51 /* main.m */; };
+		CD929FA2209B74D600DF2DBB /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FA1209B74D600DF2DBB /* MainMenuViewController.m */; };
+		CD929FA5209B74EC00DF2DBB /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FA4209B74EC00DF2DBB /* ExampleViewController.m */; };
+		CD929FA8209B74FA00DF2DBB /* OutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FA7209B74FA00DF2DBB /* OutputViewController.m */; };
+		CD929FAB209B750200DF2DBB /* InputOutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FAA209B750200DF2DBB /* InputOutputViewController.m */; };
+		CD929FAE209B86C400DF2DBB /* GetNavWithPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FAD209B86C400DF2DBB /* GetNavWithPreviewViewController.m */; };
+		CD929FB1209B86D700DF2DBB /* GetNavWithoutPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FB0209B86D700DF2DBB /* GetNavWithoutPreviewViewController.m */; };
+		CD929FB4209B86EC00DF2DBB /* FindLatLongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FB3209B86EC00DF2DBB /* FindLatLongViewController.m */; };
+		CD929FB7209B870500DF2DBB /* SearchForLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FB6209B870500DF2DBB /* SearchForLocationViewController.m */; };
+		CD929FBA209B871D00DF2DBB /* DisplaySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FB9209B871D00DF2DBB /* DisplaySearchViewController.m */; };
+		CD929FBD209B872F00DF2DBB /* GetRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FBC209B872F00DF2DBB /* GetRouteViewController.m */; };
+		CD929FC0209B874200DF2DBB /* DisplayOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FBF209B874200DF2DBB /* DisplayOverviewViewController.m */; };
+		CD929FC3209B875700DF2DBB /* DisplayTurnListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FC2209B875700DF2DBB /* DisplayTurnListViewController.m */; };
+		CD929FC6209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FC5209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m */; };
+		CD929FC9209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FC8209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m */; };
+		CD929FCC209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FCB209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m */; };
+		CD929FCF209B87AA00DF2DBB /* CreateMapVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FCE209B87AA00DF2DBB /* CreateMapVCViewController.m */; };
+		CD929FD2209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FD1209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m */; };
+		CD929FD5209B87E700DF2DBB /* ReportDriverETAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FD4209B87E700DF2DBB /* ReportDriverETAViewController.m */; };
+		CD929FD8209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FD7209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m */; };
+		CD929FDB209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */; };
+		CD929FDD209BA2C900DF2DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD929FDC209BA21D00DF2DBB /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9405A0124124E8136D7D5122 /* libPods-Reference App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reference App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CC68630A3E763478086799 /* Pods-Reference App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.debug.xcconfig"; sourceTree = "<group>"; };
+		CD079A6F2097B6DB00AA5F51 /* Reference App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reference App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD079A722097B6DB00AA5F51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD079A732097B6DB00AA5F51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD079A752097B6DB00AA5F51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD079A762097B6DB00AA5F51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD079A7B2097B6DC00AA5F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD079A7E2097B6DC00AA5F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD079A802097B6DC00AA5F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD079A812097B6DC00AA5F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD929FA0209B74D600DF2DBB /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		CD929FA1209B74D600DF2DBB /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		CD929FA3209B74EC00DF2DBB /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		CD929FA4209B74EC00DF2DBB /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		CD929FA6209B74FA00DF2DBB /* OutputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputViewController.h; sourceTree = "<group>"; };
+		CD929FA7209B74FA00DF2DBB /* OutputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutputViewController.m; sourceTree = "<group>"; };
+		CD929FA9209B750200DF2DBB /* InputOutputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputOutputViewController.h; sourceTree = "<group>"; };
+		CD929FAA209B750200DF2DBB /* InputOutputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputOutputViewController.m; sourceTree = "<group>"; };
+		CD929FAC209B86C400DF2DBB /* GetNavWithPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetNavWithPreviewViewController.h; sourceTree = "<group>"; };
+		CD929FAD209B86C400DF2DBB /* GetNavWithPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetNavWithPreviewViewController.m; sourceTree = "<group>"; };
+		CD929FAF209B86D700DF2DBB /* GetNavWithoutPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetNavWithoutPreviewViewController.h; sourceTree = "<group>"; };
+		CD929FB0209B86D700DF2DBB /* GetNavWithoutPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetNavWithoutPreviewViewController.m; sourceTree = "<group>"; };
+		CD929FB2209B86EC00DF2DBB /* FindLatLongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLatLongViewController.h; sourceTree = "<group>"; };
+		CD929FB3209B86EC00DF2DBB /* FindLatLongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindLatLongViewController.m; sourceTree = "<group>"; };
+		CD929FB5209B870500DF2DBB /* SearchForLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchForLocationViewController.h; sourceTree = "<group>"; };
+		CD929FB6209B870500DF2DBB /* SearchForLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchForLocationViewController.m; sourceTree = "<group>"; };
+		CD929FB8209B871D00DF2DBB /* DisplaySearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplaySearchViewController.h; sourceTree = "<group>"; };
+		CD929FB9209B871D00DF2DBB /* DisplaySearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplaySearchViewController.m; sourceTree = "<group>"; };
+		CD929FBB209B872F00DF2DBB /* GetRouteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetRouteViewController.h; sourceTree = "<group>"; };
+		CD929FBC209B872F00DF2DBB /* GetRouteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetRouteViewController.m; sourceTree = "<group>"; };
+		CD929FBE209B874200DF2DBB /* DisplayOverviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayOverviewViewController.h; sourceTree = "<group>"; };
+		CD929FBF209B874200DF2DBB /* DisplayOverviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayOverviewViewController.m; sourceTree = "<group>"; };
+		CD929FC1209B875700DF2DBB /* DisplayTurnListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayTurnListViewController.h; sourceTree = "<group>"; };
+		CD929FC2209B875700DF2DBB /* DisplayTurnListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayTurnListViewController.m; sourceTree = "<group>"; };
+		CD929FC4209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertMapViewWithStoryboardViewController.h; sourceTree = "<group>"; };
+		CD929FC5209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertMapViewWithStoryboardViewController.m; sourceTree = "<group>"; };
+		CD929FC7209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertMapViewWithoutStoryboardViewController.h; sourceTree = "<group>"; };
+		CD929FC8209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertMapViewWithoutStoryboardViewController.m; sourceTree = "<group>"; };
+		CD929FCA209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnotateMapWithStaticPinsViewController.h; sourceTree = "<group>"; };
+		CD929FCB209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnotateMapWithStaticPinsViewController.m; sourceTree = "<group>"; };
+		CD929FCD209B87AA00DF2DBB /* CreateMapVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateMapVCViewController.h; sourceTree = "<group>"; };
+		CD929FCE209B87AA00DF2DBB /* CreateMapVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateMapVCViewController.m; sourceTree = "<group>"; };
+		CD929FD0209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportDriverCurrentLocationViewController.h; sourceTree = "<group>"; };
+		CD929FD1209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportDriverCurrentLocationViewController.m; sourceTree = "<group>"; };
+		CD929FD3209B87E700DF2DBB /* ReportDriverETAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportDriverETAViewController.h; sourceTree = "<group>"; };
+		CD929FD4209B87E700DF2DBB /* ReportDriverETAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportDriverETAViewController.m; sourceTree = "<group>"; };
+		CD929FD6209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportDriverRouteSegmentViewController.h; sourceTree = "<group>"; };
+		CD929FD7209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportDriverRouteSegmentViewController.m; sourceTree = "<group>"; };
+		CD929FD9209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayDriverReportedLocationViewController.h; sourceTree = "<group>"; };
+		CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayDriverReportedLocationViewController.m; sourceTree = "<group>"; };
+		CD929FDC209BA21D00DF2DBB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E118535B69808F21C741C47C /* Pods-Reference App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD079A6C2097B6DB00AA5F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E52949EB6AD699A27116B78 /* libPods-Reference App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FCF960F49B7AF5B8DD14724 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9405A0124124E8136D7D5122 /* libPods-Reference App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		730A4F14E9D59A5F2F6F599F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7CC68630A3E763478086799 /* Pods-Reference App.debug.xcconfig */,
+				E118535B69808F21C741C47C /* Pods-Reference App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD079A662097B6DB00AA5F51 = {
+			isa = PBXGroup;
+			children = (
+				CD079A712097B6DB00AA5F51 /* Reference App */,
+				CD079A702097B6DB00AA5F51 /* Products */,
+				730A4F14E9D59A5F2F6F599F /* Pods */,
+				1FCF960F49B7AF5B8DD14724 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD079A702097B6DB00AA5F51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD079A6F2097B6DB00AA5F51 /* Reference App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD079A712097B6DB00AA5F51 /* Reference App */ = {
+			isa = PBXGroup;
+			children = (
+				CD079A722097B6DB00AA5F51 /* AppDelegate.h */,
+				CD079A732097B6DB00AA5F51 /* AppDelegate.m */,
+				CD929F8E209B736A00DF2DBB /* Support */,
+				CD929F8F209B740300DF2DBB /* 1. Get Navigation (with Preview) */,
+				CD929F9F209B748D00DF2DBB /* 2. Get Navigation (without Preview) */,
+				CD929F9E209B748300DF2DBB /* 3. Find Lat Long from Street Address */,
+				CD929F9D209B747D00DF2DBB /* 4. Search for a Location */,
+				CD929F9C209B747600DF2DBB /* 5. Display Search */,
+				CD929F9B209B747000DF2DBB /* 6. Get Route */,
+				CD929F9A209B746900DF2DBB /* 7. Display Overview */,
+				CD929F99209B746100DF2DBB /* 8. Display Turn List */,
+				CD929F98209B745A00DF2DBB /* 9. Insert Map View (with Storyboard) */,
+				CD929F97209B745200DF2DBB /* 10. Insert Map View (without Storyboard) */,
+				CD929F96209B744800DF2DBB /* 11. Annotate Map with Static Pins */,
+				CD929F95209B744000DF2DBB /* 12. Create Map View Controller */,
+				CD929F94209B743600DF2DBB /* 13. Report Driver Current Location */,
+				CD929F93209B742D00DF2DBB /* 14. Report Driver ETA */,
+				CD929F91209B741D00DF2DBB /* 15. Report Driver Route Segment */,
+				CD929F90209B741100DF2DBB /* 16. Display Driver Reported Location */,
+				CD929FDC209BA21D00DF2DBB /* Main.storyboard */,
+				CD079A752097B6DB00AA5F51 /* ViewController.h */,
+				CD079A762097B6DB00AA5F51 /* ViewController.m */,
+				CD079A7B2097B6DC00AA5F51 /* Assets.xcassets */,
+				CD079A7D2097B6DC00AA5F51 /* LaunchScreen.storyboard */,
+				CD079A802097B6DC00AA5F51 /* Info.plist */,
+				CD079A812097B6DC00AA5F51 /* main.m */,
+			);
+			path = "Reference App";
+			sourceTree = "<group>";
+		};
+		CD929F8E209B736A00DF2DBB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FA0209B74D600DF2DBB /* MainMenuViewController.h */,
+				CD929FA1209B74D600DF2DBB /* MainMenuViewController.m */,
+				CD929FA3209B74EC00DF2DBB /* ExampleViewController.h */,
+				CD929FA4209B74EC00DF2DBB /* ExampleViewController.m */,
+				CD929FA6209B74FA00DF2DBB /* OutputViewController.h */,
+				CD929FA7209B74FA00DF2DBB /* OutputViewController.m */,
+				CD929FA9209B750200DF2DBB /* InputOutputViewController.h */,
+				CD929FAA209B750200DF2DBB /* InputOutputViewController.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CD929F8F209B740300DF2DBB /* 1. Get Navigation (with Preview) */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FAC209B86C400DF2DBB /* GetNavWithPreviewViewController.h */,
+				CD929FAD209B86C400DF2DBB /* GetNavWithPreviewViewController.m */,
+			);
+			path = "1. Get Navigation (with Preview)";
+			sourceTree = "<group>";
+		};
+		CD929F90209B741100DF2DBB /* 16. Display Driver Reported Location */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FD9209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.h */,
+				CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */,
+			);
+			path = "16. Display Driver Reported Location";
+			sourceTree = "<group>";
+		};
+		CD929F91209B741D00DF2DBB /* 15. Report Driver Route Segment */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FD6209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.h */,
+				CD929FD7209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m */,
+			);
+			path = "15. Report Driver Route Segment";
+			sourceTree = "<group>";
+		};
+		CD929F93209B742D00DF2DBB /* 14. Report Driver ETA */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FD3209B87E700DF2DBB /* ReportDriverETAViewController.h */,
+				CD929FD4209B87E700DF2DBB /* ReportDriverETAViewController.m */,
+			);
+			path = "14. Report Driver ETA";
+			sourceTree = "<group>";
+		};
+		CD929F94209B743600DF2DBB /* 13. Report Driver Current Location */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FD0209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.h */,
+				CD929FD1209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m */,
+			);
+			path = "13. Report Driver Current Location";
+			sourceTree = "<group>";
+		};
+		CD929F95209B744000DF2DBB /* 12. Create Map View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FCD209B87AA00DF2DBB /* CreateMapVCViewController.h */,
+				CD929FCE209B87AA00DF2DBB /* CreateMapVCViewController.m */,
+			);
+			path = "12. Create Map View Controller";
+			sourceTree = "<group>";
+		};
+		CD929F96209B744800DF2DBB /* 11. Annotate Map with Static Pins */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FCA209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.h */,
+				CD929FCB209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m */,
+			);
+			path = "11. Annotate Map with Static Pins";
+			sourceTree = "<group>";
+		};
+		CD929F97209B745200DF2DBB /* 10. Insert Map View (without Storyboard) */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FC7209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.h */,
+				CD929FC8209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m */,
+			);
+			path = "10. Insert Map View (without Storyboard)";
+			sourceTree = "<group>";
+		};
+		CD929F98209B745A00DF2DBB /* 9. Insert Map View (with Storyboard) */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FC4209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.h */,
+				CD929FC5209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m */,
+			);
+			path = "9. Insert Map View (with Storyboard)";
+			sourceTree = "<group>";
+		};
+		CD929F99209B746100DF2DBB /* 8. Display Turn List */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FC1209B875700DF2DBB /* DisplayTurnListViewController.h */,
+				CD929FC2209B875700DF2DBB /* DisplayTurnListViewController.m */,
+			);
+			path = "8. Display Turn List";
+			sourceTree = "<group>";
+		};
+		CD929F9A209B746900DF2DBB /* 7. Display Overview */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FBE209B874200DF2DBB /* DisplayOverviewViewController.h */,
+				CD929FBF209B874200DF2DBB /* DisplayOverviewViewController.m */,
+			);
+			path = "7. Display Overview";
+			sourceTree = "<group>";
+		};
+		CD929F9B209B747000DF2DBB /* 6. Get Route */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FBB209B872F00DF2DBB /* GetRouteViewController.h */,
+				CD929FBC209B872F00DF2DBB /* GetRouteViewController.m */,
+			);
+			path = "6. Get Route";
+			sourceTree = "<group>";
+		};
+		CD929F9C209B747600DF2DBB /* 5. Display Search */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FB8209B871D00DF2DBB /* DisplaySearchViewController.h */,
+				CD929FB9209B871D00DF2DBB /* DisplaySearchViewController.m */,
+			);
+			path = "5. Display Search";
+			sourceTree = "<group>";
+		};
+		CD929F9D209B747D00DF2DBB /* 4. Search for a Location */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FB5209B870500DF2DBB /* SearchForLocationViewController.h */,
+				CD929FB6209B870500DF2DBB /* SearchForLocationViewController.m */,
+			);
+			path = "4. Search for a Location";
+			sourceTree = "<group>";
+		};
+		CD929F9E209B748300DF2DBB /* 3. Find Lat Long from Street Address */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FB2209B86EC00DF2DBB /* FindLatLongViewController.h */,
+				CD929FB3209B86EC00DF2DBB /* FindLatLongViewController.m */,
+			);
+			path = "3. Find Lat Long from Street Address";
+			sourceTree = "<group>";
+		};
+		CD929F9F209B748D00DF2DBB /* 2. Get Navigation (without Preview) */ = {
+			isa = PBXGroup;
+			children = (
+				CD929FAF209B86D700DF2DBB /* GetNavWithoutPreviewViewController.h */,
+				CD929FB0209B86D700DF2DBB /* GetNavWithoutPreviewViewController.m */,
+			);
+			path = "2. Get Navigation (without Preview)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD079A6E2097B6DB00AA5F51 /* Reference App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD079A852097B6DC00AA5F51 /* Build configuration list for PBXNativeTarget "Reference App" */;
+			buildPhases = (
+				61D88AE2BD9EDCCA7F1716F5 /* [CP] Check Pods Manifest.lock */,
+				CD079A6B2097B6DB00AA5F51 /* Sources */,
+				CD079A6C2097B6DB00AA5F51 /* Frameworks */,
+				CD079A6D2097B6DB00AA5F51 /* Resources */,
+				2248AB307CDB6D228507D515 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reference App";
+			productName = "Reference App";
+			productReference = CD079A6F2097B6DB00AA5F51 /* Reference App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD079A672097B6DB00AA5F51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = TallyGo;
+				TargetAttributes = {
+					CD079A6E2097B6DB00AA5F51 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = CD079A6A2097B6DB00AA5F51 /* Build configuration list for PBXProject "Reference App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD079A662097B6DB00AA5F51;
+			productRefGroup = CD079A702097B6DB00AA5F51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD079A6E2097B6DB00AA5F51 /* Reference App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD079A6D2097B6DB00AA5F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD929FDD209BA2C900DF2DBB /* Main.storyboard in Resources */,
+				CD079A7F2097B6DC00AA5F51 /* LaunchScreen.storyboard in Resources */,
+				CD079A7C2097B6DC00AA5F51 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2248AB307CDB6D228507D515 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${PODS_ROOT}/TallyGoKit/TallyGoKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TallyGoKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61D88AE2BD9EDCCA7F1716F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reference App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD079A6B2097B6DB00AA5F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD929FC3209B875700DF2DBB /* DisplayTurnListViewController.m in Sources */,
+				CD929FCF209B87AA00DF2DBB /* CreateMapVCViewController.m in Sources */,
+				CD929FA2209B74D600DF2DBB /* MainMenuViewController.m in Sources */,
+				CD929FD5209B87E700DF2DBB /* ReportDriverETAViewController.m in Sources */,
+				CD929FB4209B86EC00DF2DBB /* FindLatLongViewController.m in Sources */,
+				CD929FB1209B86D700DF2DBB /* GetNavWithoutPreviewViewController.m in Sources */,
+				CD929FBD209B872F00DF2DBB /* GetRouteViewController.m in Sources */,
+				CD079A772097B6DB00AA5F51 /* ViewController.m in Sources */,
+				CD929FAE209B86C400DF2DBB /* GetNavWithPreviewViewController.m in Sources */,
+				CD929FA5209B74EC00DF2DBB /* ExampleViewController.m in Sources */,
+				CD929FC6209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m in Sources */,
+				CD929FCC209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m in Sources */,
+				CD079A822097B6DC00AA5F51 /* main.m in Sources */,
+				CD079A742097B6DB00AA5F51 /* AppDelegate.m in Sources */,
+				CD929FDB209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m in Sources */,
+				CD929FD2209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m in Sources */,
+				CD929FA8209B74FA00DF2DBB /* OutputViewController.m in Sources */,
+				CD929FD8209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m in Sources */,
+				CD929FC9209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m in Sources */,
+				CD929FC0209B874200DF2DBB /* DisplayOverviewViewController.m in Sources */,
+				CD929FAB209B750200DF2DBB /* InputOutputViewController.m in Sources */,
+				CD929FB7209B870500DF2DBB /* SearchForLocationViewController.m in Sources */,
+				CD929FBA209B871D00DF2DBB /* DisplaySearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD079A7D2097B6DC00AA5F51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD079A7E2097B6DC00AA5F51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD079A832097B6DC00AA5F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD079A842097B6DC00AA5F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD079A862097B6DC00AA5F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7CC68630A3E763478086799 /* Pods-Reference App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Reference App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD079A872097B6DC00AA5F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E118535B69808F21C741C47C /* Pods-Reference App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Reference App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD079A6A2097B6DB00AA5F51 /* Build configuration list for PBXProject "Reference App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD079A832097B6DC00AA5F51 /* Debug */,
+				CD079A842097B6DC00AA5F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD079A852097B6DC00AA5F51 /* Build configuration list for PBXNativeTarget "Reference App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD079A862097B6DC00AA5F51 /* Debug */,
+				CD079A872097B6DC00AA5F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD079A672097B6DB00AA5F51 /* Project object */;
+}
