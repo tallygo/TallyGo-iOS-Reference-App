@@ -12,4 +12,6 @@ Some of the later examples work in conjunction with our [reference server](https
 
 ## Setup
 
-In Terminal, `cd` to the reference app, and then run `pod install` before you open the project for the first time.
+1. In Terminal, `cd` to the reference app, and then run `pod install` before you open the project for the first time.
+
+2. In Xcode, open `AppDelegate.swift` or `AppDelegate.m` (for Swift or Objective-C, respectively) and paste your TallyGo access token. If you don't have an access token yet, [get one here for free](https://tallygo.com/signup). The app will not run without a valid access token.
