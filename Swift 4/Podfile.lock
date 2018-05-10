@@ -6,19 +6,22 @@ PODS:
 
 DEPENDENCIES:
   - Starscream
-  - TallyGoKit
+  - TallyGoKit (from `../../TallyGoKit-ObjC`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Mapbox-iOS-SDK
     - Starscream
-    - TallyGoKit
+
+EXTERNAL SOURCES:
+  TallyGoKit:
+    :path: "../../TallyGoKit-ObjC"
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: 23ececda1d90c3b436b45e2c88e9677f025303c0
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
-  TallyGoKit: b8075a342ff6f1c9a62217c1a5d1b294cf3561f8
+  TallyGoKit: 44738915d61031b8e790ce38482aaec5e90a477f
 
-PODFILE CHECKSUM: a797e52a5f830439d9fbc20a6b218c6d98bbb740
+PODFILE CHECKSUM: ca16092f6d92f430b97aed9134e8b8d3adbf1d4a
 
 COCOAPODS: 1.5.0

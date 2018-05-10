@@ -6,7 +6,8 @@ target 'Reference App' do
   # use_frameworks!
 
   # Pods for Reference App
-  pod 'TallyGoKit'
+  #pod 'TallyGoKit'
+  pod 'TallyGoKit', path: '../../TallyGoKit-ObjC'
   pod 'jetfire'
 
 end
