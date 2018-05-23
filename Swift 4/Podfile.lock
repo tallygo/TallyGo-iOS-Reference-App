@@ -1,7 +1,7 @@
 PODS:
   - Mapbox-iOS-SDK (3.7.6)
   - Starscream (3.0.5)
-  - TallyGoKit (2.0.2):
+  - TallyGoKit (2.0.4):
     - Mapbox-iOS-SDK (< 3.8, >= 3.6.4, ~> 3.0)
 
 DEPENDENCIES:
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: 23ececda1d90c3b436b45e2c88e9677f025303c0
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
-  TallyGoKit: 44738915d61031b8e790ce38482aaec5e90a477f
+  TallyGoKit: 5093b9b55e90b163331cbb3d1690d86ac0797f99
 
 PODFILE CHECKSUM: ca16092f6d92f430b97aed9134e8b8d3adbf1d4a
 
