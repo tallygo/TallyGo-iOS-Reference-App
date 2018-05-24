@@ -1,27 +1,24 @@
 PODS:
   - jetfire (0.1.5)
-  - Mapbox-iOS-SDK (3.7.6)
-  - TallyGoKit (2.0.2):
+  - Mapbox-iOS-SDK (3.7.8)
+  - TallyGoKit (2.0.3):
     - Mapbox-iOS-SDK (< 3.8, >= 3.6.4, ~> 3.0)
 
 DEPENDENCIES:
   - jetfire
-  - TallyGoKit (from `../../TallyGoKit-ObjC`)
+  - TallyGoKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - jetfire
     - Mapbox-iOS-SDK
-
-EXTERNAL SOURCES:
-  TallyGoKit:
-    :path: "../../TallyGoKit-ObjC"
+    - TallyGoKit
 
 SPEC CHECKSUMS:
   jetfire: 60c16cd6ae0282928e24203eb93f03b89c1929ce
-  Mapbox-iOS-SDK: 23ececda1d90c3b436b45e2c88e9677f025303c0
-  TallyGoKit: 44738915d61031b8e790ce38482aaec5e90a477f
+  Mapbox-iOS-SDK: a8b55533ef5c5e91b5a26533bd4fb0ec88a3b994
+  TallyGoKit: 76f55e101b6baee054021c0d5e1c0242a2191b2c
 
-PODFILE CHECKSUM: aa5439622d33aaa05d2348e4f3d05beac0cad308
+PODFILE CHECKSUM: d41770c59b3e315b9bdf8b4c535b8dcbbea8d176
 
 COCOAPODS: 1.5.0

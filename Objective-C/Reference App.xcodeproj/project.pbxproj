@@ -343,7 +343,6 @@
 				CD079A6C2097B6DB00AA5F51 /* Frameworks */,
 				CD079A6D2097B6DB00AA5F51 /* Resources */,
 				2248AB307CDB6D228507D515 /* [CP] Embed Pods Frameworks */,
-				8C9F6564B59C0D4F35F0830F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -409,11 +408,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${PODS_ROOT}/TallyGoKit/TallyGoKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TallyGoKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -436,40 +437,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C9F6564B59C0D4F35F0830F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-resources.sh",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Feedback/Feedback.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Turn List/TurnList.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Search/Search.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Menu/Menu.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overview/Overview.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Preview/Preview.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Turn-By-Turn/TurnByTurn.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Map/Map.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Errors/NoConfiguration.storyboard",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feedback.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TurnList.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Search.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Menu.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Overview.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Preview.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TurnByTurn.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Map.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NoConfiguration.storyboardc",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
