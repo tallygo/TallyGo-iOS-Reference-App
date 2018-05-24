@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,21 +14,21 @@
         <scene sceneID="SUb-nF-R7F">
             <objects>
                 <tableViewController id="Of8-gV-8og" customClass="MainMenuViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Yk-Fz-hFM">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="9Yk-Fz-hFM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="Jlf-Uh-A4z">
+                            <tableViewSection headerTitle="Get Navigation In Your App" id="sH0-Zk-Biv">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="AjA-gz-iYa" style="IBUITableViewCellStyleDefault" id="D0Y-V2-saQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Uak-PL-kkn" style="IBUITableViewCellStyleDefault" id="uBu-eK-6ME">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D0Y-V2-saQ" id="h4Y-Eg-r6k">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uBu-eK-6ME" id="S2y-R8-79t">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1. Get Navigation (with Preview)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AjA-gz-iYa">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1. Get Navigation (with Preview)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uak-PL-kkn">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -37,17 +38,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="o4h-Hu-P8t" kind="show" id="ygn-Yd-BvN"/>
+                                            <segue destination="o4h-Hu-P8t" kind="show" id="MnS-K5-4e0"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="YsA-h1-hHx" style="IBUITableViewCellStyleDefault" id="4Iu-o0-hnx">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="FgQ-jt-vs1" style="IBUITableViewCellStyleDefault" id="2Jo-K1-iLZ">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Iu-o0-hnx" id="89b-rc-4Fh">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Jo-K1-iLZ" id="MTT-kZ-4pu">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2. Get Navigation (without Preview)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YsA-h1-hHx">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2. Get Navigation (without Preview)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FgQ-jt-vs1">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -57,17 +58,21 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="k2h-HZ-6Dk" kind="show" id="g9z-ae-Akz"/>
+                                            <segue destination="k2h-HZ-6Dk" kind="show" id="7ra-g9-Xo6"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="kAo-ri-fJJ" style="IBUITableViewCellStyleDefault" id="vyK-4i-Jzt">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="UI Examples" id="Jlf-Uh-A4z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="EGh-gT-4ku" style="IBUITableViewCellStyleDefault" id="FZS-nb-8Ac">
+                                        <rect key="frame" x="0.0" y="199.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vyK-4i-Jzt" id="75U-26-lyj">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FZS-nb-8Ac" id="hg8-IB-KAX">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3. Find a Lat/Long from a Street Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kAo-ri-fJJ">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3. Map, search, and navigation w/ TGMapViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EGh-gT-4ku">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -77,117 +82,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vZ3-hd-TLY" kind="show" id="unb-as-Jng"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bjB-Cs-jKs" style="IBUITableViewCellStyleDefault" id="6UI-dm-Vad">
-                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6UI-dm-Vad" id="hOx-PV-gGC">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="4. Search for a Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bjB-Cs-jKs">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="dHI-wm-EGA" kind="show" id="heo-ef-y2K"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="zve-7y-Q1d" style="IBUITableViewCellStyleDefault" id="tSh-LR-NDH">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tSh-LR-NDH" id="YY2-b5-gdo">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="5. Display Search UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zve-7y-Q1d">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="eLu-Sb-fPm" kind="show" id="5Ju-BW-Swt"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xau-Xs-h6K" style="IBUITableViewCellStyleDefault" id="15S-uH-Vws">
-                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="15S-uH-Vws" id="CqR-Kv-kW6">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="6. Get a Route" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xau-Xs-h6K">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="GmE-sg-nSE" kind="show" id="RSY-TM-YIY"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="MN5-sT-dC8" style="IBUITableViewCellStyleDefault" id="Oq8-aG-VXy">
-                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oq8-aG-VXy" id="DrQ-pc-Kai">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="7. Display Overview UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MN5-sT-dC8">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="x47-Nx-oVs" kind="show" id="XaV-Mb-lMa"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="a28-i9-X2u" style="IBUITableViewCellStyleDefault" id="wam-Yw-fLk">
-                                        <rect key="frame" x="0.0" y="308" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wam-Yw-fLk" id="oUb-Rt-jQ7">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="8. Display Turn List UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a28-i9-X2u">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ApW-C6-NPK" kind="show" id="JUR-lP-yvR"/>
+                                            <segue destination="0Ni-Qj-VaF" kind="show" id="qvZ-qX-7jI"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Vvj-Rd-Qgz" style="IBUITableViewCellStyleDefault" id="vAU-jG-lZY">
-                                        <rect key="frame" x="0.0" y="352" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="243.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vAU-jG-lZY" id="lyZ-Nr-czW">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="9. Insert a Map View (with Storyboard)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vvj-Rd-Qgz">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="4. Basic Map w/ TGMapView (Storyboard)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vvj-Rd-Qgz">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -201,13 +106,13 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ble-LK-HVP" style="IBUITableViewCellStyleDefault" id="PBW-BC-pzo">
-                                        <rect key="frame" x="0.0" y="396" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="287.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PBW-BC-pzo" id="ptm-CO-cFL">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="10. Insert a Map View (without Storyboard)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ble-LK-HVP">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="5. Basic Map w/ TGMapView (no Storyboard)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ble-LK-HVP">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -221,13 +126,13 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JPV-Mg-L2i" style="IBUITableViewCellStyleDefault" id="H6u-qY-iJ9">
-                                        <rect key="frame" x="0.0" y="440" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="331.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H6u-qY-iJ9" id="9ih-2K-eY6">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="11. Annotate the Map with Static Pins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JPV-Mg-L2i">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="6. Displaying markers on TGMapView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JPV-Mg-L2i">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -240,14 +145,14 @@
                                             <segue destination="Ef5-RL-FIg" kind="show" id="S20-UL-Y7u"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="EGh-gT-4ku" style="IBUITableViewCellStyleDefault" id="FZS-nb-8Ac">
-                                        <rect key="frame" x="0.0" y="484" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="zve-7y-Q1d" style="IBUITableViewCellStyleDefault" id="tSh-LR-NDH">
+                                        <rect key="frame" x="0.0" y="375.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FZS-nb-8Ac" id="hg8-IB-KAX">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tSh-LR-NDH" id="YY2-b5-gdo">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="12. Create a Map View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EGh-gT-4ku">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="7. Search UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zve-7y-Q1d">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -257,17 +162,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="0Ni-Qj-VaF" kind="show" id="qvZ-qX-7jI"/>
+                                            <segue destination="eLu-Sb-fPm" kind="show" id="5Ju-BW-Swt"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fvT-HF-sjL" style="IBUITableViewCellStyleDefault" id="IC6-dh-Hb6">
-                                        <rect key="frame" x="0.0" y="528" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="MN5-sT-dC8" style="IBUITableViewCellStyleDefault" id="Oq8-aG-VXy">
+                                        <rect key="frame" x="0.0" y="419.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IC6-dh-Hb6" id="phO-Zw-NMB">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oq8-aG-VXy" id="DrQ-pc-Kai">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="13. Report a Driver's Current Location to a Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fvT-HF-sjL">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="8. Overview UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MN5-sT-dC8">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -277,17 +182,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="tiE-uE-X9l" kind="show" id="6nX-mA-Cuw"/>
+                                            <segue destination="x47-Nx-oVs" kind="show" id="XaV-Mb-lMa"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fbS-mz-RcY" style="IBUITableViewCellStyleDefault" id="RQf-GR-wjc">
-                                        <rect key="frame" x="0.0" y="572" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="a28-i9-X2u" style="IBUITableViewCellStyleDefault" id="wam-Yw-fLk">
+                                        <rect key="frame" x="0.0" y="463.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RQf-GR-wjc" id="g5C-jP-E4k">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wam-Yw-fLk" id="oUb-Rt-jQ7">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="14. Report a Driver's ETA to a Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fbS-mz-RcY">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="9. Turn List UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a28-i9-X2u">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -297,17 +202,41 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="sPF-gL-Ma3" kind="show" id="ffh-ug-mFV"/>
+                                            <segue destination="ApW-C6-NPK" kind="show" id="JUR-lP-yvR"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="HSA-pg-o2P" style="IBUITableViewCellStyleDefault" id="7Es-LN-qBg">
-                                        <rect key="frame" x="0.0" y="616" width="375" height="44"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Data Examples" id="8N5-fU-kbP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ufw-mS-ryg" style="IBUITableViewCellStyleDefault" id="277-Kt-LmN">
+                                        <rect key="frame" x="0.0" y="563.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Es-LN-qBg" id="dEV-L7-1LJ">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="277-Kt-LmN" id="hId-mM-HGO">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="10. Get lat/long pair from street address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ufw-mS-ryg">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vZ3-hd-TLY" kind="show" id="RHD-cc-OSq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="jKN-Fo-JNo" style="IBUITableViewCellStyleDefault" id="ihz-dy-R4k">
+                                        <rect key="frame" x="0.0" y="607.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ihz-dy-R4k" id="Rzw-Wz-kUN">
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="15. Report a Driver's Route Segment to a Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HSA-pg-o2P">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="11. Get detailed location information from lat/long pair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jKN-Fo-JNo">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -317,17 +246,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="JIt-mX-nxT" kind="show" id="iwp-2W-gwx"/>
+                                            <segue destination="dHI-wm-EGA" kind="show" id="ZWD-8Q-kE5"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="wVc-SL-ceu" style="IBUITableViewCellStyleDefault" id="lqo-jM-BDO">
-                                        <rect key="frame" x="0.0" y="660" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="hGz-57-dhU" style="IBUITableViewCellStyleDefault" id="PWi-zo-qKt">
+                                        <rect key="frame" x="0.0" y="651.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lqo-jM-BDO" id="ctP-bS-jHj">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PWi-zo-qKt" id="2Lu-HK-5OT">
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="16. Display a Driver's Reported Location from a Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wVc-SL-ceu">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="12. Get turn-by-turn navigation route data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hGz-57-dhU">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -337,7 +266,91 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="qSA-6K-NWs" kind="show" id="EEt-k4-edE"/>
+                                            <segue destination="GmE-sg-nSE" kind="show" id="eyi-Ud-QwN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Reporting Examples" id="ojg-I4-LJM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Bkm-2g-CAk" style="IBUITableViewCellStyleDefault" id="mno-Mm-ZNv">
+                                        <rect key="frame" x="0.0" y="751.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mno-Mm-ZNv" id="p6v-Qm-V6v">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="13. Report Driver's Current Location to Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bkm-2g-CAk">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tiE-uE-X9l" kind="show" id="nPN-wO-aWk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="zJ1-vw-dTj" style="IBUITableViewCellStyleDefault" id="EZh-cL-rsI">
+                                        <rect key="frame" x="0.0" y="795.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EZh-cL-rsI" id="xAp-NP-lfT">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="14. Report Driver's ETA to Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zJ1-vw-dTj">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sPF-gL-Ma3" kind="show" id="A1H-GN-O9P"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gNh-5I-y7a" style="IBUITableViewCellStyleDefault" id="tdx-bp-hzd">
+                                        <rect key="frame" x="0.0" y="839.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tdx-bp-hzd" id="efH-fK-vT3">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="15. Report Driver's Route Segment to Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gNh-5I-y7a">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JIt-mX-nxT" kind="show" id="MeJ-ZM-9sl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Kk9-ke-moM" style="IBUITableViewCellStyleDefault" id="Fw0-At-COz">
+                                        <rect key="frame" x="0.0" y="883.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fw0-At-COz" id="ZkZ-De-pod">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="16. Display Driver's Reported Location from Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kk9-ke-moM">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qSA-6K-NWs" kind="show" id="X2O-Yr-TsE"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -428,7 +441,7 @@
             </objects>
             <point key="canvasLocation" x="1268" y="761"/>
         </scene>
-        <!--3. Find a Lat/Long from a Street Address-->
+        <!--10. Get lat/long pair from street address-->
         <scene sceneID="Nj0-TX-m7v">
             <objects>
                 <viewController id="vZ3-hd-TLY" customClass="FindLatLongViewController" sceneMemberID="viewController">
@@ -491,7 +504,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0pb-D1-deH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="3. Find a Lat/Long from a Street Address" id="O34-fa-NeF"/>
+                    <navigationItem key="navigationItem" title="10. Get lat/long pair from street address" id="O34-fa-NeF"/>
                     <connections>
                         <outlet property="inputField" destination="8sF-iJ-9lB" id="5jj-oF-3gQ"/>
                         <outlet property="outputView" destination="1MB-2I-cY0" id="h1W-xq-EXW"/>
@@ -501,7 +514,7 @@
             </objects>
             <point key="canvasLocation" x="1266" y="1453"/>
         </scene>
-        <!--4. Search for a Location-->
+        <!--11. Get detailed location information from lat/long pair-->
         <scene sceneID="c8b-zi-sC5">
             <objects>
                 <viewController id="dHI-wm-EGA" customClass="SearchForLocationViewController" sceneMemberID="viewController">
@@ -564,7 +577,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="txc-7q-oQw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="4. Search for a Location" id="r00-iv-R1H"/>
+                    <navigationItem key="navigationItem" title="11. Get detailed location information from lat/long pair" id="r00-iv-R1H"/>
                     <connections>
                         <outlet property="inputField" destination="LdF-3v-Or7" id="QkK-RU-H7J"/>
                         <outlet property="outputView" destination="NGT-Xu-00u" id="3MB-2M-iXQ"/>
@@ -574,7 +587,7 @@
             </objects>
             <point key="canvasLocation" x="1268" y="2129"/>
         </scene>
-        <!--9. Insert a Map View (with Storyboard)-->
+        <!--4. Basic Map w/ TGMapView (Storyboard)-->
         <scene sceneID="11v-eB-yJE">
             <objects>
                 <viewController id="5Ex-Ay-al9" customClass="InsertMapViewWithStoryboardViewController" sceneMemberID="viewController">
@@ -596,7 +609,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2GK-nx-bag"/>
                     </view>
-                    <navigationItem key="navigationItem" title="9. Insert a Map View (with Storyboard)" id="jwN-gG-Fqc"/>
+                    <navigationItem key="navigationItem" title="4. Basic Map w/ TGMapView (Storyboard)" id="jwN-gG-Fqc"/>
                     <connections>
                         <outlet property="mapView" destination="ZKb-f0-gF5" id="7ZF-u9-d5v"/>
                     </connections>
@@ -605,7 +618,7 @@
             </objects>
             <point key="canvasLocation" x="2460" y="2129"/>
         </scene>
-        <!--5. Display Search UI-->
+        <!--7. Search UI-->
         <scene sceneID="Nyc-hU-HiQ">
             <objects>
                 <viewController id="eLu-Sb-fPm" customClass="DisplaySearchViewController" sceneMemberID="viewController">
@@ -648,7 +661,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Qd-qP-lPC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="5. Display Search UI" id="EfZ-xm-0jB"/>
+                    <navigationItem key="navigationItem" title="7. Search UI" id="EfZ-xm-0jB"/>
                     <connections>
                         <outlet property="outputView" destination="4hp-fb-ELF" id="7VE-ok-cjO"/>
                     </connections>
@@ -657,7 +670,7 @@
             </objects>
             <point key="canvasLocation" x="1265" y="2812"/>
         </scene>
-        <!--6. Get a Route-->
+        <!--12. Get turn-by-turn navigation route data-->
         <scene sceneID="9CK-m6-f7a">
             <objects>
                 <viewController id="GmE-sg-nSE" customClass="GetRouteViewController" sceneMemberID="viewController">
@@ -700,7 +713,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lcA-s4-teW"/>
                     </view>
-                    <navigationItem key="navigationItem" title="6. Get a Route" id="ozv-nc-G55"/>
+                    <navigationItem key="navigationItem" title="12. Get turn-by-turn navigation route data" id="ozv-nc-G55"/>
                     <connections>
                         <outlet property="outputView" destination="ON9-PB-XGy" id="OeX-UI-MbC"/>
                     </connections>
@@ -709,7 +722,7 @@
             </objects>
             <point key="canvasLocation" x="2460" y="66"/>
         </scene>
-        <!--7. Display Overview-->
+        <!--8. Overview UI-->
         <scene sceneID="oZ7-sa-dCA">
             <objects>
                 <viewController id="x47-Nx-oVs" customClass="DisplayOverviewViewController" sceneMemberID="viewController">
@@ -732,13 +745,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fgz-sz-eTz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="7. Display Overview" id="y1s-ZV-80k"/>
+                    <navigationItem key="navigationItem" title="8. Overview UI" id="y1s-ZV-80k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccV-DR-Ude" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2460" y="761"/>
         </scene>
-        <!--8. Display Turn List-->
+        <!--9. Turn List UI-->
         <scene sceneID="AC3-co-Zy7">
             <objects>
                 <viewController id="ApW-C6-NPK" customClass="DisplayTurnListViewController" sceneMemberID="viewController">
@@ -761,13 +774,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Eft-jU-zUI"/>
                     </view>
-                    <navigationItem key="navigationItem" title="8. Display Turn List" id="YA5-VG-uIj"/>
+                    <navigationItem key="navigationItem" title="9. Turn List UI" id="YA5-VG-uIj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgU-Rb-pfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2460" y="1452"/>
         </scene>
-        <!--10. Insert a Map View (without Storyboard)-->
+        <!--5. Basic Map w/ TGMapView (no Storyboard)-->
         <scene sceneID="Qc3-LF-MOU">
             <objects>
                 <viewController id="AbH-5z-lva" customClass="InsertMapViewWithoutStoryboardViewController" sceneMemberID="viewController">
@@ -777,13 +790,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xrY-Ew-9vM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="10. Insert a Map View (without Storyboard)" id="JEC-tq-OsU"/>
+                    <navigationItem key="navigationItem" title="5. Basic Map w/ TGMapView (no Storyboard)" id="JEC-tq-OsU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23d-XD-nOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2460" y="2812"/>
         </scene>
-        <!--11. Annotate the Map with Static Pins-->
+        <!--6. Displaying markers on TGMapView-->
         <scene sceneID="BF4-4f-Eze">
             <objects>
                 <viewController id="Ef5-RL-FIg" customClass="AnnotateMapWithStaticPinsViewController" sceneMemberID="viewController">
@@ -805,7 +818,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bF7-BJ-5v7"/>
                     </view>
-                    <navigationItem key="navigationItem" title="11. Annotate the Map with Static Pins" id="BYy-mz-BK2"/>
+                    <navigationItem key="navigationItem" title="6. Displaying markers on TGMapView" id="BYy-mz-BK2"/>
                     <connections>
                         <outlet property="mapView" destination="8hf-WW-RKc" id="SpQ-9m-2ve"/>
                     </connections>
@@ -814,7 +827,7 @@
             </objects>
             <point key="canvasLocation" x="3425" y="66"/>
         </scene>
-        <!--16. Display a Driver's Reported Location from a Server-->
+        <!--16. Display Driver's Reported Location from Server-->
         <scene sceneID="kwt-sr-r8l">
             <objects>
                 <viewController id="qSA-6K-NWs" customClass="DisplayDriverReportedLocationViewController" sceneMemberID="viewController">
@@ -836,7 +849,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wrb-Cf-p8N"/>
                     </view>
-                    <navigationItem key="navigationItem" title="16. Display a Driver's Reported Location from a Server" id="GRJ-Ue-zGW"/>
+                    <navigationItem key="navigationItem" title="16. Display Driver's Reported Location from Server" id="GRJ-Ue-zGW"/>
                     <connections>
                         <outlet property="mapView" destination="Byf-i8-BKR" id="sJw-r9-ff2"/>
                     </connections>
@@ -845,7 +858,7 @@
             </objects>
             <point key="canvasLocation" x="4375" y="66"/>
         </scene>
-        <!--12. Create a Map View Controller-->
+        <!--3. Map, search, and navigation w/ TGMapViewController-->
         <scene sceneID="ElX-dL-Ak0">
             <objects>
                 <viewController id="0Ni-Qj-VaF" customClass="CreateMapVCViewController" sceneMemberID="viewController">
@@ -868,13 +881,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tTa-R9-yYc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="12. Create a Map View Controller" id="l8o-PD-Fxc"/>
+                    <navigationItem key="navigationItem" title="3. Map, search, and navigation w/ TGMapViewController" id="l8o-PD-Fxc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03R-aH-zL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3425" y="761"/>
         </scene>
-        <!--13. Report a Driver's Current Location to a Server-->
+        <!--13. Report Driver's Current Location to Server-->
         <scene sceneID="EAo-o4-knC">
             <objects>
                 <viewController id="tiE-uE-X9l" customClass="ReportDriverCurrentLocationViewController" sceneMemberID="viewController">
@@ -915,7 +928,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sty-aa-70N"/>
                     </view>
-                    <navigationItem key="navigationItem" title="13. Report a Driver's Current Location to a Server" id="5vq-Gp-JON"/>
+                    <navigationItem key="navigationItem" title="13. Report Driver's Current Location to Server" id="5vq-Gp-JON"/>
                     <connections>
                         <outlet property="serverURLLabel" destination="X0u-z1-Nv5" id="b1C-8A-f7K"/>
                     </connections>
@@ -924,7 +937,7 @@
             </objects>
             <point key="canvasLocation" x="3424.8000000000002" y="1451.4242878560722"/>
         </scene>
-        <!--14. Report a Driver's ETA to a Server-->
+        <!--14. Report Driver's ETA to Server-->
         <scene sceneID="ug6-aV-MgD">
             <objects>
                 <viewController id="sPF-gL-Ma3" customClass="ReportDriverETAViewController" sceneMemberID="viewController">
@@ -965,7 +978,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pTw-pi-H1F"/>
                     </view>
-                    <navigationItem key="navigationItem" title="14. Report a Driver's ETA to a Server" id="Y8k-l2-jsq"/>
+                    <navigationItem key="navigationItem" title="14. Report Driver's ETA to Server" id="Y8k-l2-jsq"/>
                     <connections>
                         <outlet property="serverURLLabel" destination="K96-Rm-4TD" id="dO9-xA-1WS"/>
                     </connections>
@@ -974,7 +987,7 @@
             </objects>
             <point key="canvasLocation" x="3425" y="2129"/>
         </scene>
-        <!--15. Report a Driver's Route Segment to a Server-->
+        <!--15. Report Driver's Route Segment to Server-->
         <scene sceneID="Zqu-Fb-i4R">
             <objects>
                 <viewController id="JIt-mX-nxT" customClass="ReportDriverRouteSegmentViewController" sceneMemberID="viewController">
@@ -1015,7 +1028,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r8g-iu-cmw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="15. Report a Driver's Route Segment to a Server" id="UAd-T1-zvc"/>
+                    <navigationItem key="navigationItem" title="15. Report Driver's Route Segment to Server" id="UAd-T1-zvc"/>
                     <connections>
                         <outlet property="serverURLLabel" destination="cv4-w8-pYr" id="MRH-ZY-qLU"/>
                     </connections>

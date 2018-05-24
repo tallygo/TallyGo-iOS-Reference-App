@@ -120,16 +120,16 @@
 				CD1AE5092098D3B7001C1F1C /* Support */,
 				CD079A8C2097B85600AA5F51 /* 1. Get Navigation (with Preview) */,
 				CD079A8F2097B87900AA5F51 /* 2. Get Navigation (without Preview) */,
-				CD1AE5042098CF99001C1F1C /* 3. Find Lat Long from Street Address */,
-				CD1AE5052098CFD5001C1F1C /* 4. Search for a Location */,
-				CD1AE5062098D004001C1F1C /* 5. Display Search */,
-				CDDBEE9F209916F9003F0A4E /* 6. Get Route */,
-				CDDBEEA020991753003F0A4E /* 7. Display Overview */,
-				CDDBEEA220991760003F0A4E /* 8. Display Turn List */,
-				CDDBEEA42099177A003F0A4E /* 9. Insert Map View (with Storyboard) */,
-				CDB37B0B20992358006AE41E /* 10. Insert Map View (without Storyboard) */,
-				CDDBEEA320991768003F0A4E /* 11. Annotate Map with Static Pins */,
-				CDDBEEA520991789003F0A4E /* 12. Create Map View Controller */,
+				CDDBEEA520991789003F0A4E /* 3. Map, search, and navigation with TGMapViewController */,
+				CDDBEEA42099177A003F0A4E /* 4. Basic Map with TGMapView (Storyboard) */,
+				CDB37B0B20992358006AE41E /* 5. Basic Map with TGMapView (no Storyboard) */,
+				CDDBEEA320991768003F0A4E /* 6. Displaying markers on TGMapView */,
+				CD1AE5062098D004001C1F1C /* 7. Search UI */,
+				CDDBEEA020991753003F0A4E /* 8. Overview UI */,
+				CDDBEEA220991760003F0A4E /* 9. Turn List UI */,
+				CD1AE5042098CF99001C1F1C /* 10. Get lat long pair from street address */,
+				CD1AE5052098CFD5001C1F1C /* 11. Get detailed location information from lat long pair */,
+				CDDBEE9F209916F9003F0A4E /* 12. Get turn-by-turn navigation route data */,
 				CDB37B14209A1C03006AE41E /* 13. Report Driver Current Location */,
 				CDB37B15209A1C0E006AE41E /* 14. Report Driver ETA */,
 				CDB37B16209A1C17006AE41E /* 15. Report Driver Route Segment */,
@@ -158,28 +158,28 @@
 			path = "2. Get Navigation (without Preview)";
 			sourceTree = "<group>";
 		};
-		CD1AE5042098CF99001C1F1C /* 3. Find Lat Long from Street Address */ = {
+		CD1AE5042098CF99001C1F1C /* 10. Get lat long pair from street address */ = {
 			isa = PBXGroup;
 			children = (
 				CD1AE5072098D03D001C1F1C /* FindLatLongViewController.swift */,
 			);
-			path = "3. Find Lat Long from Street Address";
+			path = "10. Get lat long pair from street address";
 			sourceTree = "<group>";
 		};
-		CD1AE5052098CFD5001C1F1C /* 4. Search for a Location */ = {
+		CD1AE5052098CFD5001C1F1C /* 11. Get detailed location information from lat long pair */ = {
 			isa = PBXGroup;
 			children = (
 				CD1AE50C2098DAC7001C1F1C /* SearchForLocationViewController.swift */,
 			);
-			path = "4. Search for a Location";
+			path = "11. Get detailed location information from lat long pair";
 			sourceTree = "<group>";
 		};
-		CD1AE5062098D004001C1F1C /* 5. Display Search */ = {
+		CD1AE5062098D004001C1F1C /* 7. Search UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD1AE50E2098DFBA001C1F1C /* DisplaySearchViewController.swift */,
 			);
-			path = "5. Display Search";
+			path = "7. Search UI";
 			sourceTree = "<group>";
 		};
 		CD1AE5092098D3B7001C1F1C /* Support */ = {
@@ -193,12 +193,12 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		CDB37B0B20992358006AE41E /* 10. Insert Map View (without Storyboard) */ = {
+		CDB37B0B20992358006AE41E /* 5. Basic Map with TGMapView (no Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B0E209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift */,
 			);
-			path = "10. Insert Map View (without Storyboard)";
+			path = "5. Basic Map with TGMapView (no Storyboard)";
 			sourceTree = "<group>";
 		};
 		CDB37B14209A1C03006AE41E /* 13. Report Driver Current Location */ = {
@@ -233,52 +233,52 @@
 			path = "16. Display Driver Reported Location";
 			sourceTree = "<group>";
 		};
-		CDDBEE9F209916F9003F0A4E /* 6. Get Route */ = {
+		CDDBEE9F209916F9003F0A4E /* 12. Get turn-by-turn navigation route data */ = {
 			isa = PBXGroup;
 			children = (
 				CDDBEEA6209917BD003F0A4E /* GetRouteViewController.swift */,
 			);
-			path = "6. Get Route";
+			path = "12. Get turn-by-turn navigation route data";
 			sourceTree = "<group>";
 		};
-		CDDBEEA020991753003F0A4E /* 7. Display Overview */ = {
+		CDDBEEA020991753003F0A4E /* 8. Overview UI */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */,
 			);
-			path = "7. Display Overview";
+			path = "8. Overview UI";
 			sourceTree = "<group>";
 		};
-		CDDBEEA220991760003F0A4E /* 8. Display Turn List */ = {
+		CDDBEEA220991760003F0A4E /* 9. Turn List UI */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */,
 			);
-			path = "8. Display Turn List";
+			path = "9. Turn List UI";
 			sourceTree = "<group>";
 		};
-		CDDBEEA320991768003F0A4E /* 11. Annotate Map with Static Pins */ = {
+		CDDBEEA320991768003F0A4E /* 6. Displaying markers on TGMapView */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B10209925B9006AE41E /* AnnotateMapWithStaticPinsViewController.swift */,
 			);
-			path = "11. Annotate Map with Static Pins";
+			path = "6. Displaying markers on TGMapView";
 			sourceTree = "<group>";
 		};
-		CDDBEEA42099177A003F0A4E /* 9. Insert Map View (with Storyboard) */ = {
+		CDDBEEA42099177A003F0A4E /* 4. Basic Map with TGMapView (Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B0C20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift */,
 			);
-			path = "9. Insert Map View (with Storyboard)";
+			path = "4. Basic Map with TGMapView (Storyboard)";
 			sourceTree = "<group>";
 		};
-		CDDBEEA520991789003F0A4E /* 12. Create Map View Controller */ = {
+		CDDBEEA520991789003F0A4E /* 3. Map, search, and navigation with TGMapViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B12209926B3006AE41E /* CreateMapVCViewController.swift */,
 			);
-			path = "12. Create Map View Controller";
+			path = "3. Map, search, and navigation with TGMapViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,7 +566,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -581,7 +584,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
