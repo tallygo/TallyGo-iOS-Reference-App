@@ -147,16 +147,16 @@
 				CD929F8E209B736A00DF2DBB /* Support */,
 				CD929F8F209B740300DF2DBB /* 1. Get Navigation (with Preview) */,
 				CD929F9F209B748D00DF2DBB /* 2. Get Navigation (without Preview) */,
-				CD929F9E209B748300DF2DBB /* 3. Find Lat Long from Street Address */,
-				CD929F9D209B747D00DF2DBB /* 4. Search for a Location */,
-				CD929F9C209B747600DF2DBB /* 5. Display Search */,
-				CD929F9B209B747000DF2DBB /* 6. Get Route */,
-				CD929F9A209B746900DF2DBB /* 7. Display Overview */,
-				CD929F99209B746100DF2DBB /* 8. Display Turn List */,
-				CD929F98209B745A00DF2DBB /* 9. Insert Map View (with Storyboard) */,
-				CD929F97209B745200DF2DBB /* 10. Insert Map View (without Storyboard) */,
-				CD929F96209B744800DF2DBB /* 11. Annotate Map with Static Pins */,
-				CD929F95209B744000DF2DBB /* 12. Create Map View Controller */,
+				CD929F95209B744000DF2DBB /* 3. Map, search, and navigation with TGMapViewController */,
+				CD929F98209B745A00DF2DBB /* 4. Basic Map with TGMapView (Storyboard) */,
+				CD929F97209B745200DF2DBB /* 5. Basic Map with TGMapView (no Storyboard) */,
+				CD929F96209B744800DF2DBB /* 6. Displaying markers on TGMapView */,
+				CD929F9C209B747600DF2DBB /* 7. Search UI */,
+				CD929F9A209B746900DF2DBB /* 8. Overview UI */,
+				CD929F99209B746100DF2DBB /* 9. Turn List UI */,
+				CD929F9E209B748300DF2DBB /* 10. Get lat long pair from street address */,
+				CD929F9D209B747D00DF2DBB /* 11. Get detailed location information from lat long pair */,
+				CD929F9B209B747000DF2DBB /* 12. Get turn-by-turn navigation route data */,
 				CD929F94209B743600DF2DBB /* 13. Report Driver Current Location */,
 				CD929F93209B742D00DF2DBB /* 14. Report Driver ETA */,
 				CD929F91209B741D00DF2DBB /* 15. Report Driver Route Segment */,
@@ -232,94 +232,94 @@
 			path = "13. Report Driver Current Location";
 			sourceTree = "<group>";
 		};
-		CD929F95209B744000DF2DBB /* 12. Create Map View Controller */ = {
+		CD929F95209B744000DF2DBB /* 3. Map, search, and navigation with TGMapViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FCD209B87AA00DF2DBB /* CreateMapVCViewController.h */,
 				CD929FCE209B87AA00DF2DBB /* CreateMapVCViewController.m */,
 			);
-			path = "12. Create Map View Controller";
+			path = "3. Map, search, and navigation with TGMapViewController";
 			sourceTree = "<group>";
 		};
-		CD929F96209B744800DF2DBB /* 11. Annotate Map with Static Pins */ = {
+		CD929F96209B744800DF2DBB /* 6. Displaying markers on TGMapView */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FCA209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.h */,
 				CD929FCB209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m */,
 			);
-			path = "11. Annotate Map with Static Pins";
+			path = "6. Displaying markers on TGMapView";
 			sourceTree = "<group>";
 		};
-		CD929F97209B745200DF2DBB /* 10. Insert Map View (without Storyboard) */ = {
+		CD929F97209B745200DF2DBB /* 5. Basic Map with TGMapView (no Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FC7209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.h */,
 				CD929FC8209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m */,
 			);
-			path = "10. Insert Map View (without Storyboard)";
+			path = "5. Basic Map with TGMapView (no Storyboard)";
 			sourceTree = "<group>";
 		};
-		CD929F98209B745A00DF2DBB /* 9. Insert Map View (with Storyboard) */ = {
+		CD929F98209B745A00DF2DBB /* 4. Basic Map with TGMapView (Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FC4209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.h */,
 				CD929FC5209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m */,
 			);
-			path = "9. Insert Map View (with Storyboard)";
+			path = "4. Basic Map with TGMapView (Storyboard)";
 			sourceTree = "<group>";
 		};
-		CD929F99209B746100DF2DBB /* 8. Display Turn List */ = {
+		CD929F99209B746100DF2DBB /* 9. Turn List UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FC1209B875700DF2DBB /* DisplayTurnListViewController.h */,
 				CD929FC2209B875700DF2DBB /* DisplayTurnListViewController.m */,
 			);
-			path = "8. Display Turn List";
+			path = "9. Turn List UI";
 			sourceTree = "<group>";
 		};
-		CD929F9A209B746900DF2DBB /* 7. Display Overview */ = {
+		CD929F9A209B746900DF2DBB /* 8. Overview UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FBE209B874200DF2DBB /* DisplayOverviewViewController.h */,
 				CD929FBF209B874200DF2DBB /* DisplayOverviewViewController.m */,
 			);
-			path = "7. Display Overview";
+			path = "8. Overview UI";
 			sourceTree = "<group>";
 		};
-		CD929F9B209B747000DF2DBB /* 6. Get Route */ = {
+		CD929F9B209B747000DF2DBB /* 12. Get turn-by-turn navigation route data */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FBB209B872F00DF2DBB /* GetRouteViewController.h */,
 				CD929FBC209B872F00DF2DBB /* GetRouteViewController.m */,
 			);
-			path = "6. Get Route";
+			path = "12. Get turn-by-turn navigation route data";
 			sourceTree = "<group>";
 		};
-		CD929F9C209B747600DF2DBB /* 5. Display Search */ = {
+		CD929F9C209B747600DF2DBB /* 7. Search UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FB8209B871D00DF2DBB /* DisplaySearchViewController.h */,
 				CD929FB9209B871D00DF2DBB /* DisplaySearchViewController.m */,
 			);
-			path = "5. Display Search";
+			path = "7. Search UI";
 			sourceTree = "<group>";
 		};
-		CD929F9D209B747D00DF2DBB /* 4. Search for a Location */ = {
+		CD929F9D209B747D00DF2DBB /* 11. Get detailed location information from lat long pair */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FB5209B870500DF2DBB /* SearchForLocationViewController.h */,
 				CD929FB6209B870500DF2DBB /* SearchForLocationViewController.m */,
 			);
-			path = "4. Search for a Location";
+			path = "11. Get detailed location information from lat long pair";
 			sourceTree = "<group>";
 		};
-		CD929F9E209B748300DF2DBB /* 3. Find Lat Long from Street Address */ = {
+		CD929F9E209B748300DF2DBB /* 10. Get lat long pair from street address */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FB2209B86EC00DF2DBB /* FindLatLongViewController.h */,
 				CD929FB3209B86EC00DF2DBB /* FindLatLongViewController.m */,
 			);
-			path = "3. Find Lat Long from Street Address";
+			path = "10. Get lat long pair from street address";
 			sourceTree = "<group>";
 		};
 		CD929F9F209B748D00DF2DBB /* 2. Get Navigation (without Preview) */ = {
