@@ -353,6 +353,46 @@
                                             <segue destination="qSA-6K-NWs" kind="show" id="qZn-mW-RrB"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="XSd-Kl-h9b" style="IBUITableViewCellStyleDefault" id="uVW-51-Sgq">
+                                        <rect key="frame" x="0.0" y="927.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uVW-51-Sgq" id="1PV-yd-Kqj">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="17. Report Driver Motion to Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XSd-Kl-h9b">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="loz-7M-AIU" kind="show" id="acg-kK-ws8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="FZJ-9e-eDr" style="IBUITableViewCellStyleDefault" id="Dc8-f1-uSF">
+                                        <rect key="frame" x="0.0" y="971.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dc8-f1-uSF" id="BJk-cL-uUC">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="18. Display Driver Motion from Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FZJ-9e-eDr">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="flo-oY-vFD" kind="show" id="3Us-yu-3vC"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1036,6 +1076,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IU4-XY-oaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3425" y="2812"/>
+        </scene>
+        <!--17. Report Driver Motion to Server-->
+        <scene sceneID="E7F-uW-FHQ">
+            <objects>
+                <viewController id="loz-7M-AIU" customClass="ReportDriverMotionViewController" customModule="Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xrm-vh-FJn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wna-kf-pcI">
+                                <rect key="frame" x="173" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="go:" destination="loz-7M-AIU" eventType="touchUpInside" id="9ze-Nw-WZg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-Xt-4fy">
+                                <rect key="frame" x="16" y="356" width="343" height="81.5"/>
+                                <string key="text">The app will attempt to connect to the following server to send reports. Make sure the server is running, and check the server console messages to see it working.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO3-N4-jc3">
+                                <rect key="frame" x="144" y="453.5" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YXM-Xt-4fy" firstAttribute="top" secondItem="wna-kf-pcI" secondAttribute="bottom" constant="8" id="6g9-Ta-9nV"/>
+                            <constraint firstItem="gO3-N4-jc3" firstAttribute="top" secondItem="YXM-Xt-4fy" secondAttribute="bottom" constant="16" id="8PQ-YZ-aam"/>
+                            <constraint firstItem="wna-kf-pcI" firstAttribute="centerY" secondItem="xrm-vh-FJn" secondAttribute="centerY" id="Cgi-oM-cbd"/>
+                            <constraint firstItem="gO3-N4-jc3" firstAttribute="centerX" secondItem="xrm-vh-FJn" secondAttribute="centerX" id="JtD-gu-bqE"/>
+                            <constraint firstItem="YXM-Xt-4fy" firstAttribute="leading" secondItem="rHG-Tm-aw8" secondAttribute="leading" constant="16" id="oXt-0e-81A"/>
+                            <constraint firstItem="wna-kf-pcI" firstAttribute="centerX" secondItem="xrm-vh-FJn" secondAttribute="centerX" id="sJF-B2-gV9"/>
+                            <constraint firstItem="rHG-Tm-aw8" firstAttribute="trailing" secondItem="YXM-Xt-4fy" secondAttribute="trailing" constant="16" id="zkG-99-Ed2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rHG-Tm-aw8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="17. Report Driver Motion to Server" id="ITo-9N-Mn5"/>
+                    <connections>
+                        <outlet property="serverURLLabel" destination="gO3-N4-jc3" id="xT6-xd-3Ci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7b-Q2-woz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4374" y="761"/>
+        </scene>
+        <!--18. Display Driver Motion from Server-->
+        <scene sceneID="qv4-yB-fEr">
+            <objects>
+                <viewController id="flo-oY-vFD" customClass="DisplayDriverMotionViewController" customModule="Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="40Q-Dl-KYO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVz-AF-CnL" customClass="TGMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PVz-AF-CnL" secondAttribute="bottom" id="MLd-nU-8ef"/>
+                            <constraint firstAttribute="trailing" secondItem="PVz-AF-CnL" secondAttribute="trailing" id="T5H-ja-AO2"/>
+                            <constraint firstItem="PVz-AF-CnL" firstAttribute="top" secondItem="40Q-Dl-KYO" secondAttribute="top" id="hzh-Jl-8QH"/>
+                            <constraint firstItem="PVz-AF-CnL" firstAttribute="leading" secondItem="40Q-Dl-KYO" secondAttribute="leading" id="p7S-eE-pRn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="grs-qe-Ow7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="18. Display Driver Motion from Server" id="lp0-wR-lzO"/>
+                    <connections>
+                        <outlet property="mapView" destination="PVz-AF-CnL" id="2vA-YE-OhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6s9-d4-s5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4374" y="1452"/>
         </scene>
     </scenes>
 </document>

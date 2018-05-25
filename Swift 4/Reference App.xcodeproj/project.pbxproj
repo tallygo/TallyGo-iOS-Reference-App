@@ -20,6 +20,7 @@
 		CD1AE50D2098DAC7001C1F1C /* SearchForLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE50C2098DAC7001C1F1C /* SearchForLocationViewController.swift */; };
 		CD1AE50F2098DFBA001C1F1C /* DisplaySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE50E2098DFBA001C1F1C /* DisplaySearchViewController.swift */; };
 		CD1AE5112098E093001C1F1C /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE5102098E093001C1F1C /* OutputViewController.swift */; };
+		CD4D992820B88CF800C5A0B5 /* DisplayDriverMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D992720B88CF800C5A0B5 /* DisplayDriverMotionViewController.swift */; };
 		CDB37B0820992166006AE41E /* DisplayOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */; };
 		CDB37B0A2099224D006AE41E /* DisplayTurnListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */; };
 		CDB37B0D20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B0C20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift */; };
@@ -53,6 +54,7 @@
 		CD1AE50C2098DAC7001C1F1C /* SearchForLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForLocationViewController.swift; sourceTree = "<group>"; };
 		CD1AE50E2098DFBA001C1F1C /* DisplaySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchViewController.swift; sourceTree = "<group>"; };
 		CD1AE5102098E093001C1F1C /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		CD4D992720B88CF800C5A0B5 /* DisplayDriverMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayDriverMotionViewController.swift; sourceTree = "<group>"; };
 		CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayOverviewViewController.swift; sourceTree = "<group>"; };
 		CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTurnListViewController.swift; sourceTree = "<group>"; };
 		CDB37B0C20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertMapViewWithStoryboardViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				CDB37B16209A1C17006AE41E /* 15. Report Driver Route Segment */,
 				CDB37B17209A1C38006AE41E /* 16. Display Driver Reported Location */,
 				CDC7E64D20B6194100B96B31 /* 17. Report Driver Motion */,
+				CD4D992620B88CC500C5A0B5 /* 18. Display Driver Motion */,
 				CD079A582097B6B700AA5F51 /* Main.storyboard */,
 				CD079A5B2097B6B900AA5F51 /* Assets.xcassets */,
 				CD079A5D2097B6B900AA5F51 /* LaunchScreen.storyboard */,
@@ -194,6 +197,14 @@
 				CD1AE50A2098D3D3001C1F1C /* InputOutputViewController.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		CD4D992620B88CC500C5A0B5 /* 18. Display Driver Motion */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D992720B88CF800C5A0B5 /* DisplayDriverMotionViewController.swift */,
+			);
+			path = "18. Display Driver Motion";
 			sourceTree = "<group>";
 		};
 		CDB37B0B20992358006AE41E /* 5. Basic Map with TGMapView (no Storyboard) */ = {
@@ -420,6 +431,7 @@
 				CDDBEEA7209917BD003F0A4E /* GetRouteViewController.swift in Sources */,
 				CD1AE50B2098D3D3001C1F1C /* InputOutputViewController.swift in Sources */,
 				CDB37B0820992166006AE41E /* DisplayOverviewViewController.swift in Sources */,
+				CD4D992820B88CF800C5A0B5 /* DisplayDriverMotionViewController.swift in Sources */,
 				CDC7E64F20B6195D00B96B31 /* ReportDriverMotionViewController.swift in Sources */,
 				CD1AE5082098D03D001C1F1C /* FindLatLongViewController.swift in Sources */,
 				CDB37B0F209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift in Sources */,
