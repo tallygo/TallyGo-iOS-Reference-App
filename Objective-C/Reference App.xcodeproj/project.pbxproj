@@ -34,6 +34,8 @@
 		CD929FD8209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FD7209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m */; };
 		CD929FDB209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */; };
 		CD929FDD209BA2C900DF2DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD929FDC209BA21D00DF2DBB /* Main.storyboard */; };
+		CDB7FCE120BDD9A7002B2F6F /* ReportDriverMotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB7FCE020BDD9A7002B2F6F /* ReportDriverMotionViewController.m */; };
+		CDB7FCE420BDD9B5002B2F6F /* DisplayDriverMotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB7FCE320BDD9B5002B2F6F /* DisplayDriverMotionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,10 @@
 		CD929FD9209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayDriverReportedLocationViewController.h; sourceTree = "<group>"; };
 		CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayDriverReportedLocationViewController.m; sourceTree = "<group>"; };
 		CD929FDC209BA21D00DF2DBB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CDB7FCDF20BDD9A7002B2F6F /* ReportDriverMotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportDriverMotionViewController.h; sourceTree = "<group>"; };
+		CDB7FCE020BDD9A7002B2F6F /* ReportDriverMotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportDriverMotionViewController.m; sourceTree = "<group>"; };
+		CDB7FCE220BDD9B5002B2F6F /* DisplayDriverMotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayDriverMotionViewController.h; sourceTree = "<group>"; };
+		CDB7FCE320BDD9B5002B2F6F /* DisplayDriverMotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayDriverMotionViewController.m; sourceTree = "<group>"; };
 		E118535B69808F21C741C47C /* Pods-Reference App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +167,8 @@
 				CD929F93209B742D00DF2DBB /* 14. Report Driver ETA */,
 				CD929F91209B741D00DF2DBB /* 15. Report Driver Route Segment */,
 				CD929F90209B741100DF2DBB /* 16. Display Driver Reported Location */,
+				CDB6720920BDD96000A96772 /* 17. Report Driver Motion */,
+				CDB6720A20BDD96F00A96772 /* 18. Display Driver Motion */,
 				CD929FDC209BA21D00DF2DBB /* Main.storyboard */,
 				CD079A752097B6DB00AA5F51 /* ViewController.h */,
 				CD079A762097B6DB00AA5F51 /* ViewController.m */,
@@ -331,6 +339,24 @@
 			path = "2. Get Navigation (without Preview)";
 			sourceTree = "<group>";
 		};
+		CDB6720920BDD96000A96772 /* 17. Report Driver Motion */ = {
+			isa = PBXGroup;
+			children = (
+				CDB7FCDF20BDD9A7002B2F6F /* ReportDriverMotionViewController.h */,
+				CDB7FCE020BDD9A7002B2F6F /* ReportDriverMotionViewController.m */,
+			);
+			path = "17. Report Driver Motion";
+			sourceTree = "<group>";
+		};
+		CDB6720A20BDD96F00A96772 /* 18. Display Driver Motion */ = {
+			isa = PBXGroup;
+			children = (
+				CDB7FCE220BDD9B5002B2F6F /* DisplayDriverMotionViewController.h */,
+				CDB7FCE320BDD9B5002B2F6F /* DisplayDriverMotionViewController.m */,
+			);
+			path = "18. Display Driver Motion";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -454,8 +480,10 @@
 				CD929FB1209B86D700DF2DBB /* GetNavWithoutPreviewViewController.m in Sources */,
 				CD929FBD209B872F00DF2DBB /* GetRouteViewController.m in Sources */,
 				CD079A772097B6DB00AA5F51 /* ViewController.m in Sources */,
+				CDB7FCE420BDD9B5002B2F6F /* DisplayDriverMotionViewController.m in Sources */,
 				CD929FAE209B86C400DF2DBB /* GetNavWithPreviewViewController.m in Sources */,
 				CD929FA5209B74EC00DF2DBB /* ExampleViewController.m in Sources */,
+				CDB7FCE120BDD9A7002B2F6F /* ReportDriverMotionViewController.m in Sources */,
 				CD929FC6209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m in Sources */,
 				CD929FCC209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m in Sources */,
 				CD079A822097B6DC00AA5F51 /* main.m in Sources */,

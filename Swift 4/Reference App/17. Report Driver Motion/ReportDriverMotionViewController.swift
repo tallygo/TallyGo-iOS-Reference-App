@@ -99,7 +99,7 @@ class ReportDriverMotionViewController: ExampleViewController {
         // Send the request
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
-                NSLog("Error reporting current location: \(error)")
+                NSLog("Error reporting driver motion: \(error)")
                 self.handleError(error, viewController: self.turnByTurnViewController)
 
             } else {

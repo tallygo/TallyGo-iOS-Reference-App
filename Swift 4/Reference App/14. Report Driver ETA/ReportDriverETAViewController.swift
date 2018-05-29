@@ -2,7 +2,7 @@
 //  ReportDriverETAViewController.swift
 //  Reference App
 //
-//  Created by David (work 2) on 5/2/18.
+//  Created by David Deller on 5/2/18.
 //  Copyright © 2018 TallyGo. All rights reserved.
 //
 
