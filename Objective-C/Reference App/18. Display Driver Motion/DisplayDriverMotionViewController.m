@@ -16,7 +16,8 @@
 
 @property (nonatomic, nullable) JFRWebSocket *socket;
 
-@property (nonatomic, nullable) MGLPointAnnotation *driverAnnotation;
+// Put these in your @interface
+@property (nonatomic, nonnull) MGLPointAnnotation *driverAnnotation;
 @property (nonatomic, nullable) UIViewPropertyAnimator *animator;
 
 @end
@@ -27,6 +28,7 @@ typedef NSString *DriverEventType NS_TYPED_ENUM;
 
 DriverEventType const DriverEventTypeMotion = @"motion";
 
+// Make sure to init the annotation when the view controller class loads
 - (void)viewDidLoad {
     [super viewDidLoad];
     
