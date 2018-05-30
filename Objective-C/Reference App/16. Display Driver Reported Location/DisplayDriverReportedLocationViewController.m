@@ -8,23 +8,13 @@
 
 #import "DisplayDriverReportedLocationViewController.h"
 
-@interface DriverAnnotation: NSObject <MGLAnnotation>
-
-@property (nonatomic) CLLocationCoordinate2D coordinate;
-
-- (nonnull instancetype)initWithLocation:(CLLocationCoordinate2D)location;
-
-@end
-
-
-
 @interface DisplayDriverReportedLocationViewController ()
 
 @property (weak, nonatomic) IBOutlet TGMapView *mapView;
 
 @property (nonatomic, nullable) JFRWebSocket *socket;
 
-@property (nonatomic, nullable) DriverAnnotation *driverAnnotation;
+@property (nonatomic, nonnull) MGLPointAnnotation *driverAnnotation;
 
 @end
 
@@ -35,9 +25,11 @@ typedef NSString *DriverEventType NS_TYPED_ENUM;
 DriverEventType const DriverEventTypeCurrentLocation = @"current_location";
 DriverEventType const DriverEventTypeETA = @"eta";
 
+// Make sure to init the annotation when the view controller class loads
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.driverAnnotation = MGLPointAnnotation.new;
     self.mapView.delegate = self;
 }
 
@@ -126,12 +118,12 @@ DriverEventType const DriverEventTypeETA = @"eta";
 }
 
 - (void)handleLocationEvent:(CLLocationCoordinate2D)location {
-    if (self.driverAnnotation != nil) {
-        [self.mapView removeAnnotation:self.driverAnnotation];
+    // Add the annotation to the map, if it hasn't been already
+    if (self.mapView.annotations == nil || ![self.mapView.annotations containsObject:self.driverAnnotation]) {
+        [self.mapView addAnnotation:self.driverAnnotation];
     }
     
-    self.driverAnnotation = [DriverAnnotation.alloc initWithLocation:location];
-    [self.mapView addAnnotation:self.driverAnnotation];
+    self.driverAnnotation.coordinate = location;
     
     [self.mapView setCenterCoordinate:location zoomLevel:15 animated:YES];
 }
@@ -157,25 +149,6 @@ DriverEventType const DriverEventTypeETA = @"eta";
         
         return [MGLAnnotationImage annotationImageWithImage:image reuseIdentifier:ID];
     }
-}
-
-@end
-
-
-
-@implementation DriverAnnotation
-
-- (instancetype)initWithLocation:(CLLocationCoordinate2D)location
-{
-    self = [super init];
-    if (self) {
-        _coordinate = location;
-    }
-    return self;
-}
-
-- (NSString *)title {
-    return @"Driver Location";
 }
 
 @end
