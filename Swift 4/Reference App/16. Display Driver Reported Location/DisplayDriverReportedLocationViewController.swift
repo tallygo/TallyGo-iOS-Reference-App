@@ -107,16 +107,15 @@ class DisplayDriverReportedLocationViewController: ExampleViewController, MGLMap
         }
     }
     
-    var driverAnnotation: DriverAnnotation?
+    var driverAnnotation: MGLPointAnnotation = MGLPointAnnotation()
     
     func handleLocationEvent(location: CLLocationCoordinate2D) {
-        if let driverAnnotation = self.driverAnnotation {
-            mapView.removeAnnotation(driverAnnotation)
+        // Add the annotation to the map, if it hasn't been already
+        if mapView.annotations == nil || !(mapView.annotations! as NSArray).contains(driverAnnotation) {
+            mapView.addAnnotation(driverAnnotation)
         }
         
-        let driverAnnotation = DriverAnnotation(location: location)
-        mapView.addAnnotation(driverAnnotation)
-        self.driverAnnotation = driverAnnotation
+        driverAnnotation.coordinate = location
         
         mapView.setCenter(location, zoomLevel: 15, animated: true)
     }
@@ -143,21 +142,5 @@ class DisplayDriverReportedLocationViewController: ExampleViewController, MGLMap
         }
     }
 
-}
-
-// MARK: -
-
-class DriverAnnotation: NSObject, MGLAnnotation {
-    
-    var coordinate: CLLocationCoordinate2D
-    
-    var title: String? {
-        return "Driver Location"
-    }
-    
-    init(location: CLLocationCoordinate2D) {
-        coordinate = location
-    }
-    
 }
 
