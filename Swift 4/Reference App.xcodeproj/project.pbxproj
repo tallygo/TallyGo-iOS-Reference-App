@@ -118,22 +118,22 @@
 			children = (
 				CD079A542097B6B700AA5F51 /* AppDelegate.swift */,
 				CD1AE5092098D3B7001C1F1C /* Support */,
-				CD079A8C2097B85600AA5F51 /* 1. Get Navigation (with Preview) */,
-				CD079A8F2097B87900AA5F51 /* 2. Get Navigation (without Preview) */,
-				CDDBEEA520991789003F0A4E /* 3. Map, search, and navigation with TGMapViewController */,
-				CDDBEEA42099177A003F0A4E /* 4. Basic Map with TGMapView (Storyboard) */,
-				CDB37B0B20992358006AE41E /* 5. Basic Map with TGMapView (no Storyboard) */,
-				CDDBEEA320991768003F0A4E /* 6. Displaying markers on TGMapView */,
-				CD1AE5062098D004001C1F1C /* 7. Search UI */,
-				CDDBEEA020991753003F0A4E /* 8. Overview UI */,
-				CDDBEEA220991760003F0A4E /* 9. Turn List UI */,
-				CD1AE5042098CF99001C1F1C /* 10. Get lat long pair from street address */,
-				CD1AE5052098CFD5001C1F1C /* 11. Get detailed location information from lat long pair */,
-				CDDBEE9F209916F9003F0A4E /* 12. Get turn-by-turn navigation route data */,
-				CDB37B14209A1C03006AE41E /* 13. Report Driver Current Location */,
-				CDB37B15209A1C0E006AE41E /* 14. Report Driver ETA */,
-				CDB37B16209A1C17006AE41E /* 15. Report Driver Route Segment */,
-				CDB37B17209A1C38006AE41E /* 16. Display Driver Reported Location */,
+				CD079A8C2097B85600AA5F51 /* 101. Get Navigation (with Preview) */,
+				CD079A8F2097B87900AA5F51 /* 102. Get Navigation (without Preview) */,
+				CDDBEEA520991789003F0A4E /* 201. Map, search, and navigation with TGMapViewController */,
+				CDDBEEA42099177A003F0A4E /* 202. Basic Map with TGMapView (Storyboard) */,
+				CDB37B0B20992358006AE41E /* 203. Basic Map with TGMapView (no Storyboard) */,
+				CDDBEEA320991768003F0A4E /* 204. Displaying markers on TGMapView */,
+				CD1AE5062098D004001C1F1C /* 205. Search UI */,
+				CDDBEEA020991753003F0A4E /* 206. Overview UI */,
+				CDDBEEA220991760003F0A4E /* 207. Turn List UI */,
+				CD1AE5042098CF99001C1F1C /* 301. Get lat long pair from street address */,
+				CD1AE5052098CFD5001C1F1C /* 302. Get detailed location information from lat long pair */,
+				CDDBEE9F209916F9003F0A4E /* 303. Get turn-by-turn navigation route data */,
+				CDB37B14209A1C03006AE41E /* 401. Report Driver Current Location */,
+				CDB37B15209A1C0E006AE41E /* 402. Report Driver ETA */,
+				CDB37B16209A1C17006AE41E /* 403. Report Driver Route Segment */,
+				CDB37B17209A1C38006AE41E /* 404. Display Driver Reported Location */,
 				CD079A582097B6B700AA5F51 /* Main.storyboard */,
 				CD079A5B2097B6B900AA5F51 /* Assets.xcassets */,
 				CD079A5D2097B6B900AA5F51 /* LaunchScreen.storyboard */,
@@ -142,44 +142,44 @@
 			path = "Reference App";
 			sourceTree = "<group>";
 		};
-		CD079A8C2097B85600AA5F51 /* 1. Get Navigation (with Preview) */ = {
+		CD079A8C2097B85600AA5F51 /* 101. Get Navigation (with Preview) */ = {
 			isa = PBXGroup;
 			children = (
 				CD079A8D2097B87300AA5F51 /* GetNavWithPreviewViewController.swift */,
 			);
-			path = "1. Get Navigation (with Preview)";
+			path = "101. Get Navigation (with Preview)";
 			sourceTree = "<group>";
 		};
-		CD079A8F2097B87900AA5F51 /* 2. Get Navigation (without Preview) */ = {
+		CD079A8F2097B87900AA5F51 /* 102. Get Navigation (without Preview) */ = {
 			isa = PBXGroup;
 			children = (
 				CD079A902097B88B00AA5F51 /* GetNavWithoutPreviewViewController.swift */,
 			);
-			path = "2. Get Navigation (without Preview)";
+			path = "102. Get Navigation (without Preview)";
 			sourceTree = "<group>";
 		};
-		CD1AE5042098CF99001C1F1C /* 10. Get lat long pair from street address */ = {
+		CD1AE5042098CF99001C1F1C /* 301. Get lat long pair from street address */ = {
 			isa = PBXGroup;
 			children = (
 				CD1AE5072098D03D001C1F1C /* FindLatLongViewController.swift */,
 			);
-			path = "10. Get lat long pair from street address";
+			path = "301. Get lat long pair from street address";
 			sourceTree = "<group>";
 		};
-		CD1AE5052098CFD5001C1F1C /* 11. Get detailed location information from lat long pair */ = {
+		CD1AE5052098CFD5001C1F1C /* 302. Get detailed location information from lat long pair */ = {
 			isa = PBXGroup;
 			children = (
 				CD1AE50C2098DAC7001C1F1C /* SearchForLocationViewController.swift */,
 			);
-			path = "11. Get detailed location information from lat long pair";
+			path = "302. Get detailed location information from lat long pair";
 			sourceTree = "<group>";
 		};
-		CD1AE5062098D004001C1F1C /* 7. Search UI */ = {
+		CD1AE5062098D004001C1F1C /* 205. Search UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD1AE50E2098DFBA001C1F1C /* DisplaySearchViewController.swift */,
 			);
-			path = "7. Search UI";
+			path = "205. Search UI";
 			sourceTree = "<group>";
 		};
 		CD1AE5092098D3B7001C1F1C /* Support */ = {
@@ -193,92 +193,92 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		CDB37B0B20992358006AE41E /* 5. Basic Map with TGMapView (no Storyboard) */ = {
+		CDB37B0B20992358006AE41E /* 203. Basic Map with TGMapView (no Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B0E209924EA006AE41E /* InsertMapViewWithoutStoryboardViewController.swift */,
 			);
-			path = "5. Basic Map with TGMapView (no Storyboard)";
+			path = "203. Basic Map with TGMapView (no Storyboard)";
 			sourceTree = "<group>";
 		};
-		CDB37B14209A1C03006AE41E /* 13. Report Driver Current Location */ = {
+		CDB37B14209A1C03006AE41E /* 401. Report Driver Current Location */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B18209A2018006AE41E /* ReportDriverCurrentLocationViewController.swift */,
 			);
-			path = "13. Report Driver Current Location";
+			path = "401. Report Driver Current Location";
 			sourceTree = "<group>";
 		};
-		CDB37B15209A1C0E006AE41E /* 14. Report Driver ETA */ = {
+		CDB37B15209A1C0E006AE41E /* 402. Report Driver ETA */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B1A209A2698006AE41E /* ReportDriverETAViewController.swift */,
 			);
-			path = "14. Report Driver ETA";
+			path = "402. Report Driver ETA";
 			sourceTree = "<group>";
 		};
-		CDB37B16209A1C17006AE41E /* 15. Report Driver Route Segment */ = {
+		CDB37B16209A1C17006AE41E /* 403. Report Driver Route Segment */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B1C209A2896006AE41E /* ReportDriverRouteSegmentViewController.swift */,
 			);
-			path = "15. Report Driver Route Segment";
+			path = "403. Report Driver Route Segment";
 			sourceTree = "<group>";
 		};
-		CDB37B17209A1C38006AE41E /* 16. Display Driver Reported Location */ = {
+		CDB37B17209A1C38006AE41E /* 404. Display Driver Reported Location */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B1E209A2EE9006AE41E /* DisplayDriverReportedLocationViewController.swift */,
 			);
-			path = "16. Display Driver Reported Location";
+			path = "404. Display Driver Reported Location";
 			sourceTree = "<group>";
 		};
-		CDDBEE9F209916F9003F0A4E /* 12. Get turn-by-turn navigation route data */ = {
+		CDDBEE9F209916F9003F0A4E /* 303. Get turn-by-turn navigation route data */ = {
 			isa = PBXGroup;
 			children = (
 				CDDBEEA6209917BD003F0A4E /* GetRouteViewController.swift */,
 			);
-			path = "12. Get turn-by-turn navigation route data";
+			path = "303. Get turn-by-turn navigation route data";
 			sourceTree = "<group>";
 		};
-		CDDBEEA020991753003F0A4E /* 8. Overview UI */ = {
+		CDDBEEA020991753003F0A4E /* 206. Overview UI */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */,
 			);
-			path = "8. Overview UI";
+			path = "206. Overview UI";
 			sourceTree = "<group>";
 		};
-		CDDBEEA220991760003F0A4E /* 9. Turn List UI */ = {
+		CDDBEEA220991760003F0A4E /* 207. Turn List UI */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */,
 			);
-			path = "9. Turn List UI";
+			path = "207. Turn List UI";
 			sourceTree = "<group>";
 		};
-		CDDBEEA320991768003F0A4E /* 6. Displaying markers on TGMapView */ = {
+		CDDBEEA320991768003F0A4E /* 204. Displaying markers on TGMapView */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B10209925B9006AE41E /* AnnotateMapWithStaticPinsViewController.swift */,
 			);
-			path = "6. Displaying markers on TGMapView";
+			path = "204. Displaying markers on TGMapView";
 			sourceTree = "<group>";
 		};
-		CDDBEEA42099177A003F0A4E /* 4. Basic Map with TGMapView (Storyboard) */ = {
+		CDDBEEA42099177A003F0A4E /* 202. Basic Map with TGMapView (Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B0C20992418006AE41E /* InsertMapViewWithStoryboardViewController.swift */,
 			);
-			path = "4. Basic Map with TGMapView (Storyboard)";
+			path = "202. Basic Map with TGMapView (Storyboard)";
 			sourceTree = "<group>";
 		};
-		CDDBEEA520991789003F0A4E /* 3. Map, search, and navigation with TGMapViewController */ = {
+		CDDBEEA520991789003F0A4E /* 201. Map, search, and navigation with TGMapViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CDB37B12209926B3006AE41E /* CreateMapVCViewController.swift */,
 			);
-			path = "3. Map, search, and navigation with TGMapViewController";
+			path = "201. Map, search, and navigation with TGMapViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
