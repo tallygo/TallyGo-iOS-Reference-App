@@ -22,9 +22,7 @@ class DisplayOverviewViewController: ExampleViewController {
         let origin = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
         let destination = CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932) // Santa Monica Pier
         
-        let coords: [CLLocationCoordinate2D] = [origin, destination]
-        
-        let request = TGRouteRequest(coords: coords)
+        let request = TGRouteRequest(origin: origin, destination: destination)
         
         TGNavigationService.route(for: request) { (response) in
             if let error = response.error {
@@ -42,7 +40,7 @@ class DisplayOverviewViewController: ExampleViewController {
 
     func showOverview(route: TGRoute) {
         let viewController = TGOverviewViewController.create()
-        viewController.segment = route.segments.first
+        viewController.route = route
         
         if let navigationController = navigationController {
             navigationController.navigationBar.isHidden = false

@@ -1,16 +1,16 @@
 //
-//  DisplayTurnListViewController.swift
+//  DisplayWaypointsListViewController.swift
 //  Reference App
 //
-//  Created by David Deller on 5/1/18.
+//  Created by David Deller on 6/19/18.
 //  Copyright © 2018 TallyGo. All rights reserved.
 //
 
 import UIKit
 import TallyGoKit
 
-class DisplayTurnListViewController: ExampleViewController {
-    
+class DisplayWaypointsListViewController: ExampleViewController {
+
     @IBAction func go(_ sender: Any) {
         getRoute()
     }
@@ -22,7 +22,15 @@ class DisplayTurnListViewController: ExampleViewController {
         let origin = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
         let destination = CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932) // Santa Monica Pier
         
-        let request = TGRouteRequest(origin: origin, destination: destination)
+        let waypoints: [TGWaypoint] = [
+            TGWaypoint(coordinate: origin, address: nil, description: "Grauman's Chinese Theatre"),
+            TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.07902875, longitude: -118.379441), address: nil, description: "Quarter point"),
+            TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.0564995, longitude: -118.417938), address: nil, description: "Midpoint"),
+            TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.03397025, longitude: -118.456435), address: nil, description: "Three-quarters point"),
+            TGWaypoint(coordinate: destination, address: nil, description: "Santa Monica Pier")
+        ]
+        
+        let request = TGRouteRequest(waypoints: waypoints)
         
         TGNavigationService.route(for: request) { (response) in
             if let error = response.error {
@@ -33,14 +41,19 @@ class DisplayTurnListViewController: ExampleViewController {
             } else if let route = response.route {
                 // do something with route
                 
-                self.showTurnList(route: route)
+                self.showWaypointsList(route: route)
             }
         }
     }
     
-    func showTurnList(route: TGRoute) {
-        let viewController = TGTurnListViewController.create()
-        viewController.segment = route.segments.first
+    func showWaypointsList(route: TGRoute) {
+        let viewController = TGWaypointsListViewController.create()
+        viewController.route = route
+        
+        viewController.nextWaypoint = route.segments.first!.destinationWaypoint
+        viewController.getCurrentLocationWaypoint = { () -> TGWaypoint in
+            return route.segments.first!.originWaypoint
+        }
         
         if let navigationController = navigationController {
             navigationController.navigationBar.isHidden = false
@@ -56,6 +69,5 @@ class DisplayTurnListViewController: ExampleViewController {
     @objc func pressDoneButton(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
-
 
 }

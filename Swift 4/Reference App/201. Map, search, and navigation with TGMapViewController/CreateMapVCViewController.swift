@@ -33,7 +33,7 @@ class CreateMapVCViewController: ExampleViewController {
             mapViewController.present(self.menuViewController, animated: true)
         }
         
-        present(mapViewController, animated: true)
+        present(mapViewController.embedInNavigationController(), animated: true)
     }
 
 }
