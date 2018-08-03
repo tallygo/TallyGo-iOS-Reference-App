@@ -19,7 +19,7 @@ class AddWaypointDuringNavViewController: ExampleViewController {
         // Get these coordinates from your app, these are just a sample
         let waypoints: [TGWaypoint] = [
             TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.0555, longitude: -118.417938), address: nil, description: "Midpoint"),
-            TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932), address: nil, description: "Santa Monica Pier")
+            TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932), address: nil, description: "Santa Monica Pier"),
         ]
         
         // Configure turn-by-turn navigation

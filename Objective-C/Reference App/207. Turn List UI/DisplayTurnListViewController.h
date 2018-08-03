@@ -8,7 +8,7 @@
 
 #import "ExampleViewController.h"
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 
 // Needed for -valueWithMKCoordinate:
 @import MapKit;

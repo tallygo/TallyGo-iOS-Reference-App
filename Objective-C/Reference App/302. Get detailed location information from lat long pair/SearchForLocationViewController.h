@@ -8,7 +8,7 @@
 
 #import "InputOutputViewController.h"
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 
 @interface SearchForLocationViewController : InputOutputViewController
 

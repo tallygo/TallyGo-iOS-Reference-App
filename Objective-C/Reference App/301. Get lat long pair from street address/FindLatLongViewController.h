@@ -8,7 +8,7 @@
 
 #import "InputOutputViewController.h"
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 @import MapKit;
 
 @interface FindLatLongViewController : InputOutputViewController

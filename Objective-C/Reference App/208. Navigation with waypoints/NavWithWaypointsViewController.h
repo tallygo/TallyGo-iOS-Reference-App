@@ -1,8 +1,8 @@
 //
-//  CreateMapVCViewController.h
+//  NavWithWaypointsViewController.h
 //  Reference App
 //
-//  Created by David Deller on 5/3/18.
+//  Created by David Deller on 8/3/18.
 //  Copyright © 2018 TallyGo. All rights reserved.
 //
 
@@ -10,6 +10,6 @@
 
 #import <TallyGoKit/TallyGoKit.h>
 
-@interface CreateMapVCViewController : ExampleViewController
+@interface NavWithWaypointsViewController : ExampleViewController
 
 @end

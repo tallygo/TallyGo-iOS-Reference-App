@@ -8,7 +8,7 @@
 
 #import "OutputViewController.h"
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 
 // Needed for -valueWithMKCoordinate:
 @import MapKit;

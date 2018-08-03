@@ -20,7 +20,7 @@ class NavWithWaypointsViewController: ExampleViewController {
             TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.07902875, longitude: -118.379441), address: nil, description: "Quarter point"),
             TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.0564995, longitude: -118.417938), address: nil, description: "Midpoint"),
             TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.03397025, longitude: -118.456435), address: nil, description: "Three-quarters point"),
-            TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932), address: nil, description: "Santa Monica Pier")
+            TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932), address: nil, description: "Santa Monica Pier"),
         ]
         
         // Configure turn-by-turn navigation

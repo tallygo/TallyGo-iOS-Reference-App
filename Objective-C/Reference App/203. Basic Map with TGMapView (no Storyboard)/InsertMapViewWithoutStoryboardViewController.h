@@ -8,7 +8,7 @@
 
 #import "ExampleViewController.h"
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 
 @interface InsertMapViewWithoutStoryboardViewController : ExampleViewController
 

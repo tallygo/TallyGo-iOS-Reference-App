@@ -23,9 +23,7 @@
     CLLocationCoordinate2D origin = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
     CLLocationCoordinate2D destination = CLLocationCoordinate2DMake(34.011441, -118.494932); // Santa Monica Pier
     
-    NSArray *coords = @[[NSValue valueWithMKCoordinate:origin], [NSValue valueWithMKCoordinate:destination]];
-    
-    TGRouteRequest *request = [TGRouteRequest.alloc initWithCoords:coords];
+    TGRouteRequest *request = [TGRouteRequest.alloc initWithOrigin:origin destination:destination];
     
     [TGNavigationService routeForRequest:request completionHandler:^(TGRouteResponse * _Nonnull response) {
         if (response.error != nil) {
@@ -45,7 +43,7 @@
 
 - (void)showOverview:(TGRoute *)route {
     TGOverviewViewController *viewController = [TGOverviewViewController create];
-    viewController.segment = route.segments.firstObject;
+    viewController.route = route;
     
     if (self.navigationController != nil) {
         self.navigationController.navigationBar.hidden = NO;

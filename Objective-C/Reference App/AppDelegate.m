@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 
 @interface AppDelegate ()
 
