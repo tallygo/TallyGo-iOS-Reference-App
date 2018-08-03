@@ -8,7 +8,7 @@
 
 #import "OutputViewController.h"
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 @import MapKit;
 
 @interface OutputViewController ()

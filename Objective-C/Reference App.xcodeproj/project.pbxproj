@@ -34,6 +34,9 @@
 		CD929FD8209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FD7209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m */; };
 		CD929FDB209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */; };
 		CD929FDD209BA2C900DF2DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD929FDC209BA21D00DF2DBB /* Main.storyboard */; };
+		CDD444C62114BD7B0021E4F9 /* NavWithWaypointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD444C52114BD7B0021E4F9 /* NavWithWaypointsViewController.m */; };
+		CDD444C92114BD880021E4F9 /* AddWaypointDuringNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD444C82114BD880021E4F9 /* AddWaypointDuringNavViewController.m */; };
+		CDD444CC2114BD950021E4F9 /* DisplayWaypointsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD444CB2114BD950021E4F9 /* DisplayWaypointsListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +92,12 @@
 		CD929FD9209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayDriverReportedLocationViewController.h; sourceTree = "<group>"; };
 		CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayDriverReportedLocationViewController.m; sourceTree = "<group>"; };
 		CD929FDC209BA21D00DF2DBB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CDD444C42114BD7B0021E4F9 /* NavWithWaypointsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavWithWaypointsViewController.h; sourceTree = "<group>"; };
+		CDD444C52114BD7B0021E4F9 /* NavWithWaypointsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavWithWaypointsViewController.m; sourceTree = "<group>"; };
+		CDD444C72114BD880021E4F9 /* AddWaypointDuringNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddWaypointDuringNavViewController.h; sourceTree = "<group>"; };
+		CDD444C82114BD880021E4F9 /* AddWaypointDuringNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddWaypointDuringNavViewController.m; sourceTree = "<group>"; };
+		CDD444CA2114BD950021E4F9 /* DisplayWaypointsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayWaypointsListViewController.h; sourceTree = "<group>"; };
+		CDD444CB2114BD950021E4F9 /* DisplayWaypointsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayWaypointsListViewController.m; sourceTree = "<group>"; };
 		E118535B69808F21C741C47C /* Pods-Reference App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,22 +154,25 @@
 				CD079A722097B6DB00AA5F51 /* AppDelegate.h */,
 				CD079A732097B6DB00AA5F51 /* AppDelegate.m */,
 				CD929F8E209B736A00DF2DBB /* Support */,
-				CD929F8F209B740300DF2DBB /* 1. Get Navigation (with Preview) */,
-				CD929F9F209B748D00DF2DBB /* 2. Get Navigation (without Preview) */,
-				CD929F95209B744000DF2DBB /* 3. Map, search, and navigation with TGMapViewController */,
-				CD929F98209B745A00DF2DBB /* 4. Basic Map with TGMapView (Storyboard) */,
-				CD929F97209B745200DF2DBB /* 5. Basic Map with TGMapView (no Storyboard) */,
-				CD929F96209B744800DF2DBB /* 6. Displaying markers on TGMapView */,
-				CD929F9C209B747600DF2DBB /* 7. Search UI */,
-				CD929F9A209B746900DF2DBB /* 8. Overview UI */,
-				CD929F99209B746100DF2DBB /* 9. Turn List UI */,
-				CD929F9E209B748300DF2DBB /* 10. Get lat long pair from street address */,
-				CD929F9D209B747D00DF2DBB /* 11. Get detailed location information from lat long pair */,
-				CD929F9B209B747000DF2DBB /* 12. Get turn-by-turn navigation route data */,
-				CD929F94209B743600DF2DBB /* 13. Report Driver Current Location */,
-				CD929F93209B742D00DF2DBB /* 14. Report Driver ETA */,
-				CD929F91209B741D00DF2DBB /* 15. Report Driver Route Segment */,
-				CD929F90209B741100DF2DBB /* 16. Display Driver Reported Location */,
+				CD929F8F209B740300DF2DBB /* 101. Get Navigation (with Preview) */,
+				CD929F9F209B748D00DF2DBB /* 102. Get Navigation (without Preview) */,
+				CD929F95209B744000DF2DBB /* 201. Map, search, and navigation with TGMapViewController */,
+				CD929F98209B745A00DF2DBB /* 202. Basic Map with TGMapView (Storyboard) */,
+				CD929F97209B745200DF2DBB /* 203. Basic Map with TGMapView (no Storyboard) */,
+				CD929F96209B744800DF2DBB /* 204. Displaying markers on TGMapView */,
+				CD929F9C209B747600DF2DBB /* 205. Search UI */,
+				CD929F9A209B746900DF2DBB /* 206. Overview UI */,
+				CD929F99209B746100DF2DBB /* 207. Turn List UI */,
+				CDD444C12114BD360021E4F9 /* 208. Navigation with waypoints */,
+				CDD444C22114BD480021E4F9 /* 209. Add waypoint during navigation */,
+				CDD444C32114BD510021E4F9 /* 210. Waypoints List UI */,
+				CD929F9E209B748300DF2DBB /* 301. Get lat long pair from street address */,
+				CD929F9D209B747D00DF2DBB /* 302. Get detailed location information from lat long pair */,
+				CD929F9B209B747000DF2DBB /* 303. Get turn-by-turn navigation route data */,
+				CD929F94209B743600DF2DBB /* 401. Report Driver Current Location */,
+				CD929F93209B742D00DF2DBB /* 402. Report Driver ETA */,
+				CD929F91209B741D00DF2DBB /* 403. Report Driver Route Segment */,
+				CD929F90209B741100DF2DBB /* 404. Display Driver Reported Location */,
 				CD929FDC209BA21D00DF2DBB /* Main.storyboard */,
 				CD079A752097B6DB00AA5F51 /* ViewController.h */,
 				CD079A762097B6DB00AA5F51 /* ViewController.m */,
@@ -187,148 +199,175 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		CD929F8F209B740300DF2DBB /* 1. Get Navigation (with Preview) */ = {
+		CD929F8F209B740300DF2DBB /* 101. Get Navigation (with Preview) */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FAC209B86C400DF2DBB /* GetNavWithPreviewViewController.h */,
 				CD929FAD209B86C400DF2DBB /* GetNavWithPreviewViewController.m */,
 			);
-			path = "1. Get Navigation (with Preview)";
+			path = "101. Get Navigation (with Preview)";
 			sourceTree = "<group>";
 		};
-		CD929F90209B741100DF2DBB /* 16. Display Driver Reported Location */ = {
+		CD929F90209B741100DF2DBB /* 404. Display Driver Reported Location */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FD9209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.h */,
 				CD929FDA209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m */,
 			);
-			path = "16. Display Driver Reported Location";
+			path = "404. Display Driver Reported Location";
 			sourceTree = "<group>";
 		};
-		CD929F91209B741D00DF2DBB /* 15. Report Driver Route Segment */ = {
+		CD929F91209B741D00DF2DBB /* 403. Report Driver Route Segment */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FD6209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.h */,
 				CD929FD7209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m */,
 			);
-			path = "15. Report Driver Route Segment";
+			path = "403. Report Driver Route Segment";
 			sourceTree = "<group>";
 		};
-		CD929F93209B742D00DF2DBB /* 14. Report Driver ETA */ = {
+		CD929F93209B742D00DF2DBB /* 402. Report Driver ETA */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FD3209B87E700DF2DBB /* ReportDriverETAViewController.h */,
 				CD929FD4209B87E700DF2DBB /* ReportDriverETAViewController.m */,
 			);
-			path = "14. Report Driver ETA";
+			path = "402. Report Driver ETA";
 			sourceTree = "<group>";
 		};
-		CD929F94209B743600DF2DBB /* 13. Report Driver Current Location */ = {
+		CD929F94209B743600DF2DBB /* 401. Report Driver Current Location */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FD0209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.h */,
 				CD929FD1209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m */,
 			);
-			path = "13. Report Driver Current Location";
+			path = "401. Report Driver Current Location";
 			sourceTree = "<group>";
 		};
-		CD929F95209B744000DF2DBB /* 3. Map, search, and navigation with TGMapViewController */ = {
+		CD929F95209B744000DF2DBB /* 201. Map, search, and navigation with TGMapViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FCD209B87AA00DF2DBB /* CreateMapVCViewController.h */,
 				CD929FCE209B87AA00DF2DBB /* CreateMapVCViewController.m */,
 			);
-			path = "3. Map, search, and navigation with TGMapViewController";
+			path = "201. Map, search, and navigation with TGMapViewController";
 			sourceTree = "<group>";
 		};
-		CD929F96209B744800DF2DBB /* 6. Displaying markers on TGMapView */ = {
+		CD929F96209B744800DF2DBB /* 204. Displaying markers on TGMapView */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FCA209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.h */,
 				CD929FCB209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m */,
 			);
-			path = "6. Displaying markers on TGMapView";
+			path = "204. Displaying markers on TGMapView";
 			sourceTree = "<group>";
 		};
-		CD929F97209B745200DF2DBB /* 5. Basic Map with TGMapView (no Storyboard) */ = {
+		CD929F97209B745200DF2DBB /* 203. Basic Map with TGMapView (no Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FC7209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.h */,
 				CD929FC8209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m */,
 			);
-			path = "5. Basic Map with TGMapView (no Storyboard)";
+			path = "203. Basic Map with TGMapView (no Storyboard)";
 			sourceTree = "<group>";
 		};
-		CD929F98209B745A00DF2DBB /* 4. Basic Map with TGMapView (Storyboard) */ = {
+		CD929F98209B745A00DF2DBB /* 202. Basic Map with TGMapView (Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FC4209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.h */,
 				CD929FC5209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m */,
 			);
-			path = "4. Basic Map with TGMapView (Storyboard)";
+			path = "202. Basic Map with TGMapView (Storyboard)";
 			sourceTree = "<group>";
 		};
-		CD929F99209B746100DF2DBB /* 9. Turn List UI */ = {
+		CD929F99209B746100DF2DBB /* 207. Turn List UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FC1209B875700DF2DBB /* DisplayTurnListViewController.h */,
 				CD929FC2209B875700DF2DBB /* DisplayTurnListViewController.m */,
 			);
-			path = "9. Turn List UI";
+			path = "207. Turn List UI";
 			sourceTree = "<group>";
 		};
-		CD929F9A209B746900DF2DBB /* 8. Overview UI */ = {
+		CD929F9A209B746900DF2DBB /* 206. Overview UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FBE209B874200DF2DBB /* DisplayOverviewViewController.h */,
 				CD929FBF209B874200DF2DBB /* DisplayOverviewViewController.m */,
 			);
-			path = "8. Overview UI";
+			path = "206. Overview UI";
 			sourceTree = "<group>";
 		};
-		CD929F9B209B747000DF2DBB /* 12. Get turn-by-turn navigation route data */ = {
+		CD929F9B209B747000DF2DBB /* 303. Get turn-by-turn navigation route data */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FBB209B872F00DF2DBB /* GetRouteViewController.h */,
 				CD929FBC209B872F00DF2DBB /* GetRouteViewController.m */,
 			);
-			path = "12. Get turn-by-turn navigation route data";
+			path = "303. Get turn-by-turn navigation route data";
 			sourceTree = "<group>";
 		};
-		CD929F9C209B747600DF2DBB /* 7. Search UI */ = {
+		CD929F9C209B747600DF2DBB /* 205. Search UI */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FB8209B871D00DF2DBB /* DisplaySearchViewController.h */,
 				CD929FB9209B871D00DF2DBB /* DisplaySearchViewController.m */,
 			);
-			path = "7. Search UI";
+			path = "205. Search UI";
 			sourceTree = "<group>";
 		};
-		CD929F9D209B747D00DF2DBB /* 11. Get detailed location information from lat long pair */ = {
+		CD929F9D209B747D00DF2DBB /* 302. Get detailed location information from lat long pair */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FB5209B870500DF2DBB /* SearchForLocationViewController.h */,
 				CD929FB6209B870500DF2DBB /* SearchForLocationViewController.m */,
 			);
-			path = "11. Get detailed location information from lat long pair";
+			path = "302. Get detailed location information from lat long pair";
 			sourceTree = "<group>";
 		};
-		CD929F9E209B748300DF2DBB /* 10. Get lat long pair from street address */ = {
+		CD929F9E209B748300DF2DBB /* 301. Get lat long pair from street address */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FB2209B86EC00DF2DBB /* FindLatLongViewController.h */,
 				CD929FB3209B86EC00DF2DBB /* FindLatLongViewController.m */,
 			);
-			path = "10. Get lat long pair from street address";
+			path = "301. Get lat long pair from street address";
 			sourceTree = "<group>";
 		};
-		CD929F9F209B748D00DF2DBB /* 2. Get Navigation (without Preview) */ = {
+		CD929F9F209B748D00DF2DBB /* 102. Get Navigation (without Preview) */ = {
 			isa = PBXGroup;
 			children = (
 				CD929FAF209B86D700DF2DBB /* GetNavWithoutPreviewViewController.h */,
 				CD929FB0209B86D700DF2DBB /* GetNavWithoutPreviewViewController.m */,
 			);
-			path = "2. Get Navigation (without Preview)";
+			path = "102. Get Navigation (without Preview)";
+			sourceTree = "<group>";
+		};
+		CDD444C12114BD360021E4F9 /* 208. Navigation with waypoints */ = {
+			isa = PBXGroup;
+			children = (
+				CDD444C42114BD7B0021E4F9 /* NavWithWaypointsViewController.h */,
+				CDD444C52114BD7B0021E4F9 /* NavWithWaypointsViewController.m */,
+			);
+			path = "208. Navigation with waypoints";
+			sourceTree = "<group>";
+		};
+		CDD444C22114BD480021E4F9 /* 209. Add waypoint during navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CDD444C72114BD880021E4F9 /* AddWaypointDuringNavViewController.h */,
+				CDD444C82114BD880021E4F9 /* AddWaypointDuringNavViewController.m */,
+			);
+			path = "209. Add waypoint during navigation";
+			sourceTree = "<group>";
+		};
+		CDD444C32114BD510021E4F9 /* 210. Waypoints List UI */ = {
+			isa = PBXGroup;
+			children = (
+				CDD444CA2114BD950021E4F9 /* DisplayWaypointsListViewController.h */,
+				CDD444CB2114BD950021E4F9 /* DisplayWaypointsListViewController.m */,
+			);
+			path = "210. Waypoints List UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +382,7 @@
 				CD079A6C2097B6DB00AA5F51 /* Frameworks */,
 				CD079A6D2097B6DB00AA5F51 /* Resources */,
 				2248AB307CDB6D228507D515 /* [CP] Embed Pods Frameworks */,
+				8F4456337F7920DBD109DEE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,13 +448,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${PODS_ROOT}/TallyGoKit/TallyGoKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TallyGoKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -439,6 +477,54 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8F4456337F7920DBD109DEE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-resources.sh",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Errors/NoConfiguration.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Feedback/Feedback.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Map/Map.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGArrivedViewController.xib",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGNextWaypointViewController.xib",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGPauseViewController.xib",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGPermissionsViewController.xib",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGProceedToRouteViewController.xib",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGReroutingViewController.xib",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGSuccessViewController.xib",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overview/Overview.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Preview/Preview.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Search/Search.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Turn List/TurnList.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Turn-By-Turn/TurnByTurn.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Waypoints/WaypointsList.storyboard",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NoConfiguration.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feedback.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Map.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGArrivedViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGNextWaypointViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGPauseViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGPermissionsViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGProceedToRouteViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGReroutingViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGSuccessViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Overview.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Preview.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Search.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TurnList.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TurnByTurn.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WaypointsList.storyboardc",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -448,6 +534,7 @@
 			files = (
 				CD929FC3209B875700DF2DBB /* DisplayTurnListViewController.m in Sources */,
 				CD929FCF209B87AA00DF2DBB /* CreateMapVCViewController.m in Sources */,
+				CDD444C62114BD7B0021E4F9 /* NavWithWaypointsViewController.m in Sources */,
 				CD929FA2209B74D600DF2DBB /* MainMenuViewController.m in Sources */,
 				CD929FD5209B87E700DF2DBB /* ReportDriverETAViewController.m in Sources */,
 				CD929FB4209B86EC00DF2DBB /* FindLatLongViewController.m in Sources */,
@@ -457,12 +544,14 @@
 				CD929FAE209B86C400DF2DBB /* GetNavWithPreviewViewController.m in Sources */,
 				CD929FA5209B74EC00DF2DBB /* ExampleViewController.m in Sources */,
 				CD929FC6209B876900DF2DBB /* InsertMapViewWithStoryboardViewController.m in Sources */,
+				CDD444CC2114BD950021E4F9 /* DisplayWaypointsListViewController.m in Sources */,
 				CD929FCC209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m in Sources */,
 				CD079A822097B6DC00AA5F51 /* main.m in Sources */,
 				CD079A742097B6DB00AA5F51 /* AppDelegate.m in Sources */,
 				CD929FDB209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m in Sources */,
 				CD929FD2209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m in Sources */,
 				CD929FA8209B74FA00DF2DBB /* OutputViewController.m in Sources */,
+				CDD444C92114BD880021E4F9 /* AddWaypointDuringNavViewController.m in Sources */,
 				CD929FD8209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m in Sources */,
 				CD929FC9209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m in Sources */,
 				CD929FC0209B874200DF2DBB /* DisplayOverviewViewController.m in Sources */,
@@ -604,10 +693,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64YUT8C7ML;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,10 +708,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64YUT8C7ML;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
