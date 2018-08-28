@@ -15,14 +15,14 @@ class GetNavWithoutPreviewViewController: ExampleViewController {
         TallyGo.simulatedCoordinate = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
         
         // Get these coordinates from your app, these are just a sample
-        let origin = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
-        let destination = CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932) // Santa Monica Pier
+        let origin = TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944)) // Grauman's Chinese Theatre
+        let destination = TGWaypoint(coordinate: CLLocationCoordinate2D(latitude: 34.011441, longitude: -118.494932)) // Santa Monica Pier
         
         // Configure turn-by-turn navigation
         let config = TGTurnByTurnConfiguration()
         config.showsOriginIcon = false
-        config.origin = origin
-        config.destination = destination
+        config.originWaypoint = origin
+        config.destinationWaypoint = destination
         config.commencementSpeech = "Let's go!"
         config.proceedToRouteSpeech = "Please proceed to the route."
         config.arrivalSpeech = "You have arrived."
