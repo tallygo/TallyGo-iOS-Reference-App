@@ -13,6 +13,7 @@
 		CD079A7C2097B6DC00AA5F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD079A7B2097B6DC00AA5F51 /* Assets.xcassets */; };
 		CD079A7F2097B6DC00AA5F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD079A7D2097B6DC00AA5F51 /* LaunchScreen.storyboard */; };
 		CD079A822097B6DC00AA5F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD079A812097B6DC00AA5F51 /* main.m */; };
+		CD705C3E214731A200E1FE48 /* MonitorDriverProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD705C3D214731A200E1FE48 /* MonitorDriverProgressViewController.m */; };
 		CD929FA2209B74D600DF2DBB /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FA1209B74D600DF2DBB /* MainMenuViewController.m */; };
 		CD929FA5209B74EC00DF2DBB /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FA4209B74EC00DF2DBB /* ExampleViewController.m */; };
 		CD929FA8209B74FA00DF2DBB /* OutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD929FA7209B74FA00DF2DBB /* OutputViewController.m */; };
@@ -51,6 +52,8 @@
 		CD079A7E2097B6DC00AA5F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD079A802097B6DC00AA5F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD079A812097B6DC00AA5F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD705C3C214731A200E1FE48 /* MonitorDriverProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonitorDriverProgressViewController.h; sourceTree = "<group>"; };
+		CD705C3D214731A200E1FE48 /* MonitorDriverProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonitorDriverProgressViewController.m; sourceTree = "<group>"; };
 		CD929FA0209B74D600DF2DBB /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		CD929FA1209B74D600DF2DBB /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		CD929FA3209B74EC00DF2DBB /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
@@ -173,6 +176,7 @@
 				CD929F93209B742D00DF2DBB /* 402. Report Driver ETA */,
 				CD929F91209B741D00DF2DBB /* 403. Report Driver Route Segment */,
 				CD929F90209B741100DF2DBB /* 404. Display Driver Reported Location */,
+				CD705C3B2147317000E1FE48 /* 407. Monitor Driver's Progress */,
 				CD929FDC209BA21D00DF2DBB /* Main.storyboard */,
 				CD079A752097B6DB00AA5F51 /* ViewController.h */,
 				CD079A762097B6DB00AA5F51 /* ViewController.m */,
@@ -182,6 +186,15 @@
 				CD079A812097B6DC00AA5F51 /* main.m */,
 			);
 			path = "Reference App";
+			sourceTree = "<group>";
+		};
+		CD705C3B2147317000E1FE48 /* 407. Monitor Driver's Progress */ = {
+			isa = PBXGroup;
+			children = (
+				CD705C3C214731A200E1FE48 /* MonitorDriverProgressViewController.h */,
+				CD705C3D214731A200E1FE48 /* MonitorDriverProgressViewController.m */,
+			);
+			path = "407. Monitor Driver's Progress";
 			sourceTree = "<group>";
 		};
 		CD929F8E209B736A00DF2DBB /* Support */ = {
@@ -554,6 +567,7 @@
 				CDD444C92114BD880021E4F9 /* AddWaypointDuringNavViewController.m in Sources */,
 				CD929FD8209B87FC00DF2DBB /* ReportDriverRouteSegmentViewController.m in Sources */,
 				CD929FC9209B877900DF2DBB /* InsertMapViewWithoutStoryboardViewController.m in Sources */,
+				CD705C3E214731A200E1FE48 /* MonitorDriverProgressViewController.m in Sources */,
 				CD929FC0209B874200DF2DBB /* DisplayOverviewViewController.m in Sources */,
 				CD929FAB209B750200DF2DBB /* InputOutputViewController.m in Sources */,
 				CD929FB7209B870500DF2DBB /* SearchForLocationViewController.m in Sources */,
@@ -692,7 +706,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -706,7 +723,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
