@@ -30,7 +30,7 @@
     config.proceedToRouteSpeech = @"Please proceed to the route.";
     config.arrivalSpeech = @"You have arrived.";
     
-    // If you’d rather skip the preview and jump straight into directions, you can do that:
+    // Start navigation
     TGTurnByTurnViewController *viewController = [TGTurnByTurnViewController createWithConfiguration:config];
     [self presentViewController:viewController animated:YES completion:nil];
 

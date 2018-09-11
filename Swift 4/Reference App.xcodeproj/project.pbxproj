@@ -23,6 +23,7 @@
 		CD1AE5112098E093001C1F1C /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AE5102098E093001C1F1C /* OutputViewController.swift */; };
 		CD29C5822113AC090027C562 /* NavWithWaypointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD29C5812113AC090027C562 /* NavWithWaypointsViewController.swift */; };
 		CD29C5842113ACB60027C562 /* AddWaypointDuringNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD29C5832113ACB60027C562 /* AddWaypointDuringNavViewController.swift */; };
+		CD323E1C2148346800120983 /* StartNewRouteUponArrivalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD323E1B2148346800120983 /* StartNewRouteUponArrivalViewController.swift */; };
 		CD934EBA21433AA500E7D3D9 /* MonitorDriverProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD934EB921433AA500E7D3D9 /* MonitorDriverProgressViewController.swift */; };
 		CDB37B0820992166006AE41E /* DisplayOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */; };
 		CDB37B0A2099224D006AE41E /* DisplayTurnListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */; };
@@ -59,6 +60,7 @@
 		CD1AE5102098E093001C1F1C /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
 		CD29C5812113AC090027C562 /* NavWithWaypointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavWithWaypointsViewController.swift; sourceTree = "<group>"; };
 		CD29C5832113ACB60027C562 /* AddWaypointDuringNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWaypointDuringNavViewController.swift; sourceTree = "<group>"; };
+		CD323E1B2148346800120983 /* StartNewRouteUponArrivalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartNewRouteUponArrivalViewController.swift; path = "Reference App/211. Start new route upon arrival/StartNewRouteUponArrivalViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CD934EB921433AA500E7D3D9 /* MonitorDriverProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorDriverProgressViewController.swift; sourceTree = "<group>"; };
 		CDB37B0720992166006AE41E /* DisplayOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayOverviewViewController.swift; sourceTree = "<group>"; };
 		CDB37B092099224D006AE41E /* DisplayTurnListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTurnListViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				CD29C57F2113A83C0027C562 /* 208. Navigation with waypoints */,
 				CD29C5802113A8580027C562 /* 209. Add waypoint during navigation */,
 				CD0CA2B320D9B099007CF17D /* 210. Waypoints List UI */,
+				CD323E1A214832CF00120983 /* 211. Start new route upon arrival */,
 				CD1AE5042098CF99001C1F1C /* 301. Get lat long pair from street address */,
 				CD1AE5052098CFD5001C1F1C /* 302. Get detailed location information from lat long pair */,
 				CDDBEE9F209916F9003F0A4E /* 303. Get turn-by-turn navigation route data */,
@@ -227,6 +230,14 @@
 				CD29C5832113ACB60027C562 /* AddWaypointDuringNavViewController.swift */,
 			);
 			path = "209. Add waypoint during navigation";
+			sourceTree = "<group>";
+		};
+		CD323E1A214832CF00120983 /* 211. Start new route upon arrival */ = {
+			isa = PBXGroup;
+			children = (
+				CD323E1B2148346800120983 /* StartNewRouteUponArrivalViewController.swift */,
+			);
+			path = "211. Start new route upon arrival";
 			sourceTree = "<group>";
 		};
 		CD934EB821433A7E00E7D3D9 /* 407. Monitor Driver's Progress */ = {
@@ -467,6 +478,7 @@
 				CD29C5842113ACB60027C562 /* AddWaypointDuringNavViewController.swift in Sources */,
 				CD079A552097B6B700AA5F51 /* AppDelegate.swift in Sources */,
 				CDB37B1F209A2EE9006AE41E /* DisplayDriverReportedLocationViewController.swift in Sources */,
+				CD323E1C2148346800120983 /* StartNewRouteUponArrivalViewController.swift in Sources */,
 				CD29C5822113AC090027C562 /* NavWithWaypointsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

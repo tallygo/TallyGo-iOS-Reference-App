@@ -38,6 +38,7 @@
 		CDD444C62114BD7B0021E4F9 /* NavWithWaypointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD444C52114BD7B0021E4F9 /* NavWithWaypointsViewController.m */; };
 		CDD444C92114BD880021E4F9 /* AddWaypointDuringNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD444C82114BD880021E4F9 /* AddWaypointDuringNavViewController.m */; };
 		CDD444CC2114BD950021E4F9 /* DisplayWaypointsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD444CB2114BD950021E4F9 /* DisplayWaypointsListViewController.m */; };
+		CDDDD9A421484FF500218853 /* StartNewRouteUponArrivalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDDD9A321484FF500218853 /* StartNewRouteUponArrivalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,8 @@
 		CDD444C82114BD880021E4F9 /* AddWaypointDuringNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddWaypointDuringNavViewController.m; sourceTree = "<group>"; };
 		CDD444CA2114BD950021E4F9 /* DisplayWaypointsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayWaypointsListViewController.h; sourceTree = "<group>"; };
 		CDD444CB2114BD950021E4F9 /* DisplayWaypointsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayWaypointsListViewController.m; sourceTree = "<group>"; };
+		CDDDD9A221484FF500218853 /* StartNewRouteUponArrivalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartNewRouteUponArrivalViewController.h; sourceTree = "<group>"; };
+		CDDDD9A321484FF500218853 /* StartNewRouteUponArrivalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartNewRouteUponArrivalViewController.m; sourceTree = "<group>"; };
 		E118535B69808F21C741C47C /* Pods-Reference App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +172,7 @@
 				CDD444C12114BD360021E4F9 /* 208. Navigation with waypoints */,
 				CDD444C22114BD480021E4F9 /* 209. Add waypoint during navigation */,
 				CDD444C32114BD510021E4F9 /* 210. Waypoints List UI */,
+				CDDDD9A121484FDA00218853 /* 211. Start new route upon arrival */,
 				CD929F9E209B748300DF2DBB /* 301. Get lat long pair from street address */,
 				CD929F9D209B747D00DF2DBB /* 302. Get detailed location information from lat long pair */,
 				CD929F9B209B747000DF2DBB /* 303. Get turn-by-turn navigation route data */,
@@ -383,6 +387,15 @@
 			path = "210. Waypoints List UI";
 			sourceTree = "<group>";
 		};
+		CDDDD9A121484FDA00218853 /* 211. Start new route upon arrival */ = {
+			isa = PBXGroup;
+			children = (
+				CDDDD9A221484FF500218853 /* StartNewRouteUponArrivalViewController.h */,
+				CDDDD9A321484FF500218853 /* StartNewRouteUponArrivalViewController.m */,
+			);
+			path = "211. Start new route upon arrival";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,6 +574,7 @@
 				CD929FCC209B879800DF2DBB /* AnnotateMapWithStaticPinsViewController.m in Sources */,
 				CD079A822097B6DC00AA5F51 /* main.m in Sources */,
 				CD079A742097B6DB00AA5F51 /* AppDelegate.m in Sources */,
+				CDDDD9A421484FF500218853 /* StartNewRouteUponArrivalViewController.m in Sources */,
 				CD929FDB209B880D00DF2DBB /* DisplayDriverReportedLocationViewController.m in Sources */,
 				CD929FD2209B87C700DF2DBB /* ReportDriverCurrentLocationViewController.m in Sources */,
 				CD929FA8209B74FA00DF2DBB /* OutputViewController.m in Sources */,
