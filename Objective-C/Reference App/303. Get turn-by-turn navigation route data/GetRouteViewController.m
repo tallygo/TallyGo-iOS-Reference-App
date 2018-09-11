@@ -20,10 +20,10 @@
 
 - (void)getRoute {
     // Get these coordinates from your app, these are just a sample
-    CLLocationCoordinate2D origin = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
-    CLLocationCoordinate2D destination = CLLocationCoordinate2DMake(34.011441, -118.494932); // Santa Monica Pier
+    TGWaypoint *origin = [TGWaypoint.alloc initWithCoordinate:CLLocationCoordinate2DMake(34.101558, -118.340944)]; // Grauman's Chinese Theatre
+    TGWaypoint *destination = [TGWaypoint.alloc initWithCoordinate:CLLocationCoordinate2DMake(34.011441, -118.494932)]; // Santa Monica Pier
     
-    TGRouteRequest *request = [TGRouteRequest.alloc initWithOrigin:origin destination:destination];
+    TGRouteRequest *request = [TGRouteRequest.alloc initWithOriginWaypoint:origin destinationWaypoint:destination];
     
     [TGNavigationService routeForRequest:request completionHandler:^(TGRouteResponse * _Nonnull response) {
         if (response.error != nil) {

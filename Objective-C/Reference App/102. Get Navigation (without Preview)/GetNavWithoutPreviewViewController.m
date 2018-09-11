@@ -18,19 +18,19 @@
     TallyGo.simulatedCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
     
     // Get these coordinates from your app, these are just a sample
-    CLLocationCoordinate2D origin = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
-    CLLocationCoordinate2D destination = CLLocationCoordinate2DMake(34.011441, -118.494932); // Santa Monica Pier
+    TGWaypoint *origin = [TGWaypoint.alloc initWithCoordinate:CLLocationCoordinate2DMake(34.101558, -118.340944)]; // Grauman's Chinese Theatre
+    TGWaypoint *destination = [TGWaypoint.alloc initWithCoordinate:CLLocationCoordinate2DMake(34.011441, -118.494932)]; // Santa Monica Pier
     
     // Configure turn-by-turn navigation
     TGTurnByTurnConfiguration *config = [TGTurnByTurnConfiguration new];
     config.showsOriginIcon = NO;
-    config.origin = origin;
-    config.destination = destination;
+    config.originWaypoint = origin;
+    config.destinationWaypoint = destination;
     config.commencementSpeech = @"Let's go!";
     config.proceedToRouteSpeech = @"Please proceed to the route.";
     config.arrivalSpeech = @"You have arrived.";
     
-    // If you’d rather skip the preview and jump straight into directions, you can do that:
+    // Start navigation
     TGTurnByTurnViewController *viewController = [TGTurnByTurnViewController createWithConfiguration:config];
     [self presentViewController:viewController animated:YES completion:nil];
 
