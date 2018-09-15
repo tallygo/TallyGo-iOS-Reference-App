@@ -408,7 +408,6 @@
 				CD079A6C2097B6DB00AA5F51 /* Frameworks */,
 				CD079A6D2097B6DB00AA5F51 /* Resources */,
 				2248AB307CDB6D228507D515 /* [CP] Embed Pods Frameworks */,
-				8F4456337F7920DBD109DEE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -474,11 +473,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${PODS_ROOT}/TallyGoKit/TallyGoKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TallyGoKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -501,54 +502,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F4456337F7920DBD109DEE5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-resources.sh",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Errors/NoConfiguration.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Feedback/Feedback.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Map/Map.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGArrivedViewController.xib",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGNextWaypointViewController.xib",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGPauseViewController.xib",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGPermissionsViewController.xib",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGProceedToRouteViewController.xib",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGReroutingViewController.xib",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGSuccessViewController.xib",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overview/Overview.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Preview/Preview.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Search/Search.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Turn List/TurnList.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Turn-By-Turn/TurnByTurn.storyboard",
-				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Waypoints/WaypointsList.storyboard",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NoConfiguration.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feedback.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Map.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGArrivedViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGNextWaypointViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGPauseViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGPermissionsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGProceedToRouteViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGReroutingViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGSuccessViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Overview.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Preview.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Search.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TurnList.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TurnByTurn.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WaypointsList.storyboardc",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -720,10 +673,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -737,10 +687,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reference App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tallygo.Reference-App.ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
