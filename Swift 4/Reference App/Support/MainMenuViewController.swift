@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import TallyGoKit
 
 class MainMenuViewController: UITableViewController {
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Clean up by resetting any settings from examples back to defaults
+        TallyGo.simulatedCoordinate = kCLLocationCoordinate2DInvalid
+    }
     
 }

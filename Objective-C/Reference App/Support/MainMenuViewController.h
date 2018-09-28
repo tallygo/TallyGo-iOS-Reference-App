@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <TallyGoKit/TallyGoKit.h>
+
 @interface MainMenuViewController : UITableViewController
 
 @end
