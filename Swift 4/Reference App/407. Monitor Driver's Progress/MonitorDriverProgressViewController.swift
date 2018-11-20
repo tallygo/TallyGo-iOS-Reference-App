@@ -22,11 +22,12 @@ class MonitorDriverProgressViewController: ExampleViewController {
     }
     
     func startTurnByTurn() {
-        TallyGo.simulatedCoordinate = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
+        TGDrivingSimulator.shared.startingCoordinate = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
+        TGDrivingSimulator.shared.enabled = true
         
         // Increase the simulated driving speed above realistic levels so that we can see the console messages more quickly
-        TallyGo.simulatedCitySpeed = 200 // meters per second
-        TallyGo.simulatedHighwaySpeed = 200 // meters per second
+        TGDrivingSimulator.shared.citySpeed = 200 // meters per second
+        TGDrivingSimulator.shared.highwaySpeed = 200 // meters per second
         
         // Get these coordinates from your app, these are just a sample
         let waypoints: [TGWaypoint] = [
@@ -64,8 +65,8 @@ class MonitorDriverProgressViewController: ExampleViewController {
             NSLog("Turn-by-turn navigation status: initialized for route: \(route) starting at: \(routeSegment.originWaypoint.addressDescription ?? "unknown")")
         }
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.TGTelemetryStarted, object: nil, queue: nil) { (notification) in
-            NSLog("Turn-by-turn navigation status: started navigating")
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.TGTelemetryOnRoute, object: nil, queue: nil) { (notification) in
+            NSLog("Turn-by-turn navigation status: on route")
         }
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name.TGTelemetryProceedingToRoute, object: nil, queue: nil) { (notification) in

@@ -17,7 +17,8 @@
 @implementation AddWaypointDuringNavViewController
 
 - (IBAction)go:(id)sender {
-    TallyGo.simulatedCoordinate = CLLocationCoordinate2DMake(34.0555, -118.417938); // Midpoint
+    TGDrivingSimulator.sharedDrivingSimulator.startingCoordinate = CLLocationCoordinate2DMake(34.0555, -118.417938); // Midpoint
+    TGDrivingSimulator.sharedDrivingSimulator.enabled = YES;
     
     // Get these coordinates from your app, these are just a sample
     NSArray<TGWaypoint *> *waypoints = @[

@@ -12,7 +12,8 @@ import TallyGoKit
 class NavWithWaypointsViewController: ExampleViewController {
 
     @IBAction func go(_ sender: Any) {
-        TallyGo.simulatedCoordinate = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
+        TGDrivingSimulator.shared.startingCoordinate = CLLocationCoordinate2D(latitude: 34.101558, longitude: -118.340944) // Grauman's Chinese Theatre
+        TGDrivingSimulator.shared.enabled = true
         
         // Get these coordinates from your app, these are just a sample
         let waypoints: [TGWaypoint] = [

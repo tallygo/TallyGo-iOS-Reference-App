@@ -15,7 +15,8 @@
 @implementation NavWithWaypointsViewController
 
 - (IBAction)go:(id)sender {
-    TallyGo.simulatedCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.startingCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.enabled = YES;
     
     // Get these coordinates from your app, these are just a sample
     NSArray<TGWaypoint *> *waypoints = @[
