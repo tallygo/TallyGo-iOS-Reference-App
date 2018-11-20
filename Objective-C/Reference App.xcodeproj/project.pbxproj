@@ -474,13 +474,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${PODS_ROOT}/TallyGoKit/TallyGoKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TallyGoKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -513,6 +511,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-resources.sh",
 				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Errors/NoConfiguration.storyboard",
+				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Errors/NoLocation.storyboard",
 				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Feedback/Feedback.storyboard",
 				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Map/Map.storyboard",
 				"${PODS_ROOT}/../../../TallyGoKit-ObjC/TallyGoKit/UI/Overlays/TGArrivedViewController.xib",
@@ -532,6 +531,7 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NoConfiguration.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NoLocation.storyboardc",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feedback.storyboardc",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Map.storyboardc",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGArrivedViewController.nib",
