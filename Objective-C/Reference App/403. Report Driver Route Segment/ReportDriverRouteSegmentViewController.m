@@ -39,7 +39,8 @@ static NSString *const reportRouteSegmentMethod = @"PUT";
 }
 
 - (void)startTurnByTurn {
-    TallyGo.simulatedCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.startingCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.enabled = YES;
     
     // Get these coordinates from your app, these are just a sample
     TGWaypoint *origin = [TGWaypoint.alloc initWithCoordinate:CLLocationCoordinate2DMake(34.101558, -118.340944)]; // Grauman's Chinese Theatre

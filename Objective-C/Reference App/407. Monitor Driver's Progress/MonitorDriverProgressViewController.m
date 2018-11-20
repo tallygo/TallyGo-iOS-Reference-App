@@ -26,11 +26,12 @@
 }
 
 - (void)startTurnByTurn {
-    TallyGo.simulatedCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.startingCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.enabled = YES;
     
     // Increase the simulated driving speed above realistic levels so that we can see the console messages more quickly
-    TallyGo.simulatedCitySpeed = 200; // meters per second
-    TallyGo.simulatedHighwaySpeed = 200; // meters per second
+    TGDrivingSimulator.sharedDrivingSimulator.citySpeed = 200; // meters per second
+    TGDrivingSimulator.sharedDrivingSimulator.highwaySpeed = 200; // meters per second
     
     // Get these coordinates from your app, these are just a sample
     NSArray<TGWaypoint *> *waypoints = @[
@@ -69,8 +70,8 @@
         NSLog(@"Turn-by-turn navigation status: initialized for route: %@ starting at: %@", route, routeSegment.originWaypoint.addressDescription);
     }];
     
-    [NSNotificationCenter.defaultCenter addObserverForName:TGTelemetryStartedNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull notification) {
-        NSLog(@"Turn-by-turn navigation status: started navigating");
+    [NSNotificationCenter.defaultCenter addObserverForName:TGTelemetryOnRouteNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull notification) {
+        NSLog(@"Turn-by-turn navigation status: on route");
     }];
     
     [NSNotificationCenter.defaultCenter addObserverForName:TGTelemetryProceedingToRouteNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull notification) {

@@ -14,7 +14,8 @@ class AddWaypointDuringNavViewController: ExampleViewController {
     var timer: Timer?
 
     @IBAction func go(_ sender: Any) {
-        TallyGo.simulatedCoordinate = CLLocationCoordinate2D(latitude: 34.0555, longitude: -118.417938) // Midpoint
+        TGDrivingSimulator.shared.startingCoordinate = CLLocationCoordinate2D(latitude: 34.0555, longitude: -118.417938) // Midpoint
+        TGDrivingSimulator.shared.enabled = true
         
         // Get these coordinates from your app, these are just a sample
         let waypoints: [TGWaypoint] = [

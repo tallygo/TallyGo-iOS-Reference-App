@@ -18,7 +18,7 @@
     [super viewDidAppear:animated];
     
     // Clean up by resetting any settings from examples back to defaults
-    TallyGo.simulatedCoordinate = kCLLocationCoordinate2DInvalid;
+    TGDrivingSimulator.sharedDrivingSimulator.enabled = NO;
 }
 
 @end
