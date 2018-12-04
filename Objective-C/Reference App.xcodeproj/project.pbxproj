@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E52949EB6AD699A27116B78 /* libPods-Reference App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9405A0124124E8136D7D5122 /* libPods-Reference App.a */; };
+		C2EADF7645287DC7330FC1BA /* Pods_Reference_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5C1E092C962076C3586BE /* Pods_Reference_App.framework */; };
 		CD079A742097B6DB00AA5F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD079A732097B6DB00AA5F51 /* AppDelegate.m */; };
 		CD079A772097B6DB00AA5F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD079A762097B6DB00AA5F51 /* ViewController.m */; };
 		CD079A7C2097B6DC00AA5F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD079A7B2097B6DC00AA5F51 /* Assets.xcassets */; };
@@ -42,7 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9405A0124124E8136D7D5122 /* libPods-Reference App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reference App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F5C1E092C962076C3586BE /* Pods_Reference_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reference_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CC68630A3E763478086799 /* Pods-Reference App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.debug.xcconfig"; sourceTree = "<group>"; };
 		CD079A6F2097B6DB00AA5F51 /* Reference App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reference App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD079A722097B6DB00AA5F51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E52949EB6AD699A27116B78 /* libPods-Reference App.a in Frameworks */,
+				C2EADF7645287DC7330FC1BA /* Pods_Reference_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 		1FCF960F49B7AF5B8DD14724 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9405A0124124E8136D7D5122 /* libPods-Reference App.a */,
+				20F5C1E092C962076C3586BE /* Pods_Reference_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -471,15 +471,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reference App/Pods-Reference App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
 				"${PODS_ROOT}/TallyGoKit/TallyGoKit.framework",
+				"${BUILT_PRODUCTS_DIR}/jetfire/jetfire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TallyGoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jetfire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
