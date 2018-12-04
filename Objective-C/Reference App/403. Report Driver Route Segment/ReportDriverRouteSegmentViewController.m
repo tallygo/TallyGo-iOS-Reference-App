@@ -18,6 +18,8 @@
 // Keep track of when and what we last reported.
 @property (nonatomic, nullable) TGRouteSegment *lastReportedRouteSegment;
 
+@property (nonatomic, nonnull) NSString *temporaryID;
+
 @end
 
 @implementation ReportDriverRouteSegmentViewController
@@ -32,6 +34,8 @@ static NSString *const reportRouteSegmentMethod = @"PUT";
     
     NSURL *URL = [NSURL URLWithString:reportRouteSegmentURL];
     self.serverURLLabel.text = [NSString stringWithFormat:@"%@://%@:%@", URL.scheme, URL.host, URL.port];
+    
+    self.temporaryID = NSUUID.UUID.UUIDString;
 }
 
 - (IBAction)go:(id)sender {
@@ -84,6 +88,7 @@ static NSString *const reportRouteSegmentMethod = @"PUT";
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:reportRouteSegmentURL]];
     request.HTTPMethod = reportRouteSegmentMethod;
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:self.temporaryID forHTTPHeaderField:@"X-Temporary-ID"];
     
     NSError *error = nil;
     NSData *encodedData = [NSJSONSerialization dataWithJSONObject:routeSegment.dictionary options:0 error:&error];

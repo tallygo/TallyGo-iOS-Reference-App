@@ -19,6 +19,8 @@
 @property (nonatomic, nullable) TGPoint *lastReportedLocationPoint;
 @property (nonatomic, nullable) NSDate *lastReportedLocationTime;
 
+@property (nonatomic, nonnull) NSString *temporaryID;
+
 @end
 
 @implementation ReportDriverCurrentLocationViewController
@@ -35,6 +37,8 @@ static NSString *const reportLocationMethod = @"PUT";
     
     NSURL *URL = [NSURL URLWithString:reportLocationURL];
     self.serverURLLabel.text = [NSString stringWithFormat:@"%@://%@:%@", URL.scheme, URL.host, URL.port];
+    
+    self.temporaryID = NSUUID.UUID.UUIDString;
 }
 
 - (IBAction)go:(id)sender {
@@ -97,6 +101,7 @@ static NSString *const reportLocationMethod = @"PUT";
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:reportLocationURL]];
     request.HTTPMethod = reportLocationMethod;
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:self.temporaryID forHTTPHeaderField:@"X-Temporary-ID"];
     
     NSError *error = nil;
     NSData *encodedData = [NSJSONSerialization dataWithJSONObject:requestData options:0 error:&error];

@@ -14,6 +14,7 @@ class ReportDriverCurrentLocationViewController: ExampleViewController {
     @IBOutlet weak var serverURLLabel: UILabel!
     
     var turnByTurnViewController: TGTurnByTurnViewController?
+    let temporaryID = UUID().uuidString
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +91,7 @@ class ReportDriverCurrentLocationViewController: ExampleViewController {
         var request = URLRequest(url: reportLocationURL)
         request.httpMethod = reportLocationMethod
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(temporaryID, forHTTPHeaderField: "X-Temporary-ID")
         request.httpBody = try! JSONEncoder().encode(requestData)
         
         // Send the request

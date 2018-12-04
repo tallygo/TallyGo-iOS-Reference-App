@@ -14,6 +14,7 @@ class ReportDriverRouteSegmentViewController: ExampleViewController {
     @IBOutlet weak var serverURLLabel: UILabel!
     
     var turnByTurnViewController: TGTurnByTurnViewController?
+    let temporaryID = UUID().uuidString
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +78,7 @@ class ReportDriverRouteSegmentViewController: ExampleViewController {
         var request = URLRequest(url: reportRouteSegmentURL)
         request.httpMethod = reportRouteSegmentMethod
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(temporaryID, forHTTPHeaderField: "X-Temporary-ID")
         request.httpBody = try! JSONSerialization.data(withJSONObject: routeSegment.dictionary, options: [])
         
         // Send the request
